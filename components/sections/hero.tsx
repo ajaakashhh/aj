@@ -34,7 +34,7 @@ export function Hero() {
 
         <div className="flex-1 flex items-center border-b border-ink/30 z-50">
           <Marquee
-            items={["Media Producer.", "Media Producer.", "Media Producer.",]}
+            items={["Media Producer.", "Local Anarchist.", "Media Producer.",]}
             className="font-display text-white text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]"
           />
         </div>
