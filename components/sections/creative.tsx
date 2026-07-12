@@ -10,7 +10,7 @@ export function Creative() {
     <section id="creative" className="container scroll-mt-20 py-20 sm:py-28">
       <SectionLabel index="06" title="Creative Work" />
 
-      <div className="grid gap-px border-2 border-ink bg-ink md:grid-cols-3">
+      <div className="grid gap-px overflow-hidden rounded-xl border-2 border-ink bg-ink md:grid-cols-3">
         {creativeWork.map((c, i) => {
           const Icon = icons[c.kind as keyof typeof icons] ?? BookOpen;
           return (

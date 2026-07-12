@@ -23,7 +23,7 @@ export function Government() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {governmentWork.map((g, i) => (
             <Reveal key={g.title} delay={i * 0.1}>
-              <div className="flex h-full flex-col border-2 border-ink bg-paper p-8">
+              <div className="flex h-full flex-col rounded-xl border-2 border-ink bg-paper p-8">
                 <Landmark className="mb-6 h-6 w-6 text-signal" />
                 <h3 className="font-display text-xl uppercase leading-tight tracking-tight">
                   {g.title}

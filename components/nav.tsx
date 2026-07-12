@@ -44,7 +44,7 @@ export function Nav() {
         </nav>
         <a
           href="#contact"
-          className="border-2 border-ink bg-beam px-4 py-1.5 font-sans text-xs font-bold uppercase tracking-wider shadow-[3px_3px_0_0_hsl(var(--ink))] transition-transform hover:translate-x-[1px] hover:translate-y-[1px]"
+          className="rounded-lg border-2 border-ink bg-beam px-4 py-1.5 font-sans text-xs font-bold uppercase tracking-wider shadow-[3px_3px_0_0_hsl(var(--ink))] transition-transform hover:translate-x-[1px] hover:translate-y-[1px]"
         >
           Get in touch
         </a>

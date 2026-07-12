@@ -35,7 +35,7 @@ export function Experience() {
                   {job.tags.map((t) => (
                     <span
                       key={t}
-                      className="border border-ink/30 px-2 py-0.5 font-sans text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors group-hover:border-ink group-hover:text-ink"
+                      className="rounded-full border border-ink/30 px-2 py-0.5 font-sans text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors group-hover:border-ink group-hover:text-ink"
                     >
                       {t}
                     </span>

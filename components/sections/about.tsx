@@ -13,7 +13,7 @@ export function About() {
           <p className="font-serif text-2xl leading-snug sm:text-3xl">
             {profile.aboutLead}
           </p>
-          <div className="mt-8 hatch h-40 w-full border-2 border-ink" aria-hidden />
+          <div className="mt-8 hatch h-40 w-full rounded-xl border-2 border-ink" aria-hidden />
         </Reveal>
 
         <div className="space-y-6">
@@ -43,7 +43,7 @@ export function About() {
       </div>
 
       <Reveal delay={0.1}>
-        <div className="mt-16 grid gap-px border-2 border-ink bg-ink sm:grid-cols-3">
+        <div className="mt-16 grid gap-px overflow-hidden rounded-xl border-2 border-ink bg-ink sm:grid-cols-3">
           {cadence.map((c) => (
             <div key={c.label} className="bg-paper p-6">
               <p className="font-display text-5xl text-signal">{c.value}</p>
