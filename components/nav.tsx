@@ -29,7 +29,7 @@ export function Nav() {
     >
       <div className="container flex h-16 items-center justify-between">
         <a href="#top" className="font-display text-xl uppercase tracking-tight">
-          AJ
+          Aakash <br /> Srividhya
         </a>
         <nav className="hidden items-center gap-6 md:flex">
           {links.map((l) => (

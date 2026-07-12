@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 export function About() {
   return (
-    <section id="about" className="container scroll-mt-20 py-20 sm:py-28">
+    <section id="about" className="container scroll-mt-30 pt-4">
       <SectionLabel index="01" title="About" />
 
       <div className="grid gap-12 md:grid-cols-[1fr_1.3fr]">

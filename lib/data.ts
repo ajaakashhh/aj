@@ -3,7 +3,7 @@ export const profile = {
   role: "Writer & Filmmaker",
   location: "Chennai",
   oneLine:
-    "Writer and filmmaker based in Chennai, exploring political narratives and cultural commentary through long-form journalism and short-form content.",
+    "Writer, Journalist, Media Product and filmmaker.",
   aboutLead:
     "I build a practice at the meeting point of media analysis, independent storytelling, and leftist cultural criticism.",
   aboutBody: [

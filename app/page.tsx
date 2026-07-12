@@ -12,18 +12,23 @@ import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <Nav />
-      <Hero />
-      <About />
-      <Writing />
-      <Video />
-      <Experience />
-      <Government />
-      <Creative />
-      <Press />
-      <Contact />
-      <Footer />
+      <section className="sticky top-0 h-screen z-0">
+        <Hero />
+      </section>
+      <section className="relative z-10 bg-paper min-h-screen">
+        <About />
+
+        <Writing />
+        <Video />
+        <Experience />
+        <Government />
+        <Creative />
+        <Press />
+        <Contact />
+        <Footer />
+      </section>
     </main>
   );
 }
