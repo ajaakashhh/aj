@@ -8,7 +8,7 @@ export function Experience() {
       <div className="container">
         <SectionLabel index="08" title="Work History" theme="light" />
 
-        <div className="border-t-2 border-ink">
+        <div>
           {work.map((job, i) => (
             <Reveal key={job.org} delay={i * 0.05}>
               <div className="group grid gap-2 border-b-2 border-ink py-3 md:grid-cols-[auto_1fr] md:gap-6 md:py-3">
