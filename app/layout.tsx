@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anton, Archivo, Fraunces } from "next/font/google";
+import { Anton, Poppins } from "next/font/google";
 import "./globals.css";
 
 const display = Anton({
@@ -9,17 +9,12 @@ const display = Anton({
   display: "swap",
 });
 
-const sans = Archivo({
+const sans = Poppins({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
-});
-
-const serif = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  axes: ["opsz", "SOFT"],
 });
 
 export const metadata: Metadata = {
@@ -41,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable} ${serif.variable}`}>
-      <body className="grain font-serif antialiased">{children}</body>
+    <html lang="en" className={`${display.variable} ${sans.variable}`}>
+      <body className="grain font-sans antialiased">{children}</body>
     </html>
   );
 }

@@ -1,7 +1,6 @@
 import { profile } from "@/lib/data";
 import { SectionLabel } from "@/components/section-label";
 import { Reveal } from "@/components/reveal";
-import { Badge } from "@/components/ui/badge";
 
 export function About() {
   return (
@@ -23,21 +22,6 @@ export function About() {
               </p>
             </Reveal>
           ))}
-
-          <Reveal delay={0.2}>
-            <div className="mt-8">
-              <p className="mb-3 font-sans text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                Political identity
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {profile.politicalIdentity.map((tag, i) => (
-                  <Badge key={tag} variant={i === 0 ? "signal" : "default"}>
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>
