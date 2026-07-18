@@ -22,16 +22,14 @@ export function Contact() {
           </p>
         </Reveal>
 
-        <div className="mt-6 grid gap-4 border-t-2 border-paper/40 pt-4 md:grid-cols-3">
+        <div className="mt-6 grid gap-3 md:grid-cols-3">
           <Reveal>
             <a
               href={`mailto:${profile.links.email}`}
-              className="group flex items-center gap-3 font-serif text-base sm:text-lg"
+              className="group flex items-center gap-3 rounded-xl border-2 border-ink bg-beam p-4 font-serif text-sm text-ink transition-transform hover:-translate-y-1 hover:shadow-[6px_6px_0_0_hsl(var(--ink))] sm:text-base"
             >
-              <Mail className="h-4 w-4" />
-              <span className="underline decoration-2 underline-offset-4">
-                {profile.links.email}
-              </span>
+              <Mail className="h-4 w-4 shrink-0" />
+              <span className="truncate">{profile.links.email}</span>
             </a>
           </Reveal>
           <Reveal delay={0.08}>
@@ -39,7 +37,7 @@ export function Contact() {
               href={profile.links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center justify-between border-b-2 border-paper/40 pb-1 font-sans text-xs font-bold uppercase tracking-widest sm:text-sm"
+              className="group flex items-center justify-between rounded-xl border-2 border-ink bg-beam p-4 font-sans text-xs font-bold uppercase tracking-widest text-ink transition-transform hover:-translate-y-1 hover:shadow-[6px_6px_0_0_hsl(var(--ink))] sm:text-sm"
             >
               LinkedIn
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -50,7 +48,7 @@ export function Contact() {
               href={profile.links.instagram}
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center justify-between border-b-2 border-paper/40 pb-1 font-sans text-xs font-bold uppercase tracking-widest sm:text-sm"
+              className="group flex items-center justify-between rounded-xl border-2 border-ink bg-beam p-4 font-sans text-xs font-bold uppercase tracking-widest text-ink transition-transform hover:-translate-y-1 hover:shadow-[6px_6px_0_0_hsl(var(--ink))] sm:text-sm"
             >
               Instagram
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

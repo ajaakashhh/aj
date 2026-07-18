@@ -7,7 +7,7 @@ const icons = { Poetry: BookOpen, "Short film": Clapperboard, Audiobook: Headpho
 
 export function Creative() {
   return (
-    <section id="creative" className="sticky top-0 z-[90] flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
+    <section id="creative" className="sticky top-0 z-[90] flex h-screen flex-col justify-center overflow-hidden bg-signal py-8 scroll-mt-20 sm:py-10">
       <div className="container">
         <SectionLabel index="09" title="Creative Work" />
 
@@ -16,16 +16,16 @@ export function Creative() {
             const Icon = icons[c.kind as keyof typeof icons] ?? BookOpen;
             return (
               <Reveal key={c.title} delay={i * 0.1} className="h-full">
-                <div className="group flex h-full flex-col justify-between bg-paper p-5 transition-colors hover:bg-signal hover:text-paper">
+                <div className="group flex h-full flex-col justify-between bg-beam p-5 text-ink transition-colors hover:bg-ink hover:text-paper">
                   <div className="flex items-center justify-between">
-                    <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-muted-foreground group-hover:text-paper/80">
+                    <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-ink/70 group-hover:text-paper/80">
                       {c.kind}
                     </span>
                     <Icon className="h-5 w-5" />
                   </div>
                   <div className="mt-6">
                     <h3 className="font-serif text-lg italic leading-tight sm:text-xl">{c.title}</h3>
-                    <p className="mt-2 line-clamp-2 font-serif text-sm leading-snug text-muted-foreground group-hover:text-paper/90">
+                    <p className="mt-2 line-clamp-2 font-serif text-sm leading-snug text-ink/80 group-hover:text-paper/90">
                       {c.body}
                     </p>
                   </div>
@@ -36,7 +36,7 @@ export function Creative() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="mt-4 font-serif text-sm italic text-muted-foreground sm:text-base">
+          <p className="mt-4 font-serif text-sm italic text-paper/80 sm:text-base">
             Plus freelance writing for news organizations and production houses.
           </p>
         </Reveal>

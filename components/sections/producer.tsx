@@ -5,13 +5,13 @@ import { VideoCarousel } from "@/components/video-carousel";
 
 export function Producer() {
   return (
-    <section id="producer" className="sticky top-0 z-[70] flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
+    <section id="producer" className="sticky top-0 z-[70] flex h-screen flex-col justify-center overflow-hidden bg-signal py-8 scroll-mt-20 sm:py-10">
       <div className="container">
         <SectionLabel index="07" title="Producer" />
 
         <Reveal>
-          <p className="max-w-2xl font-serif text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Content producer credits. The centered video plays automatically, muted.
+          <p className="max-w-2xl font-serif text-base leading-relaxed text-paper/80 sm:text-lg">
+            Content producer credits. Tap a video to watch.
           </p>
         </Reveal>
       </div>

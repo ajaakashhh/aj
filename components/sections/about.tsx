@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <section id="about" className="sticky top-0 z-10 flex h-screen flex-col justify-center overflow-hidden bg-paper py-10 scroll-mt-30 sm:py-14">
+    <section id="about" className="sticky top-0 z-10 flex h-screen flex-col justify-center overflow-hidden bg-signal py-10 scroll-mt-30 sm:py-14">
       <div className="container">
         <SectionLabel index="01" title="About" />
 
         <div className="grid gap-10 md:grid-cols-[1fr_1.3fr]">
           <Reveal>
-            <p className="font-serif text-2xl leading-snug sm:text-4xl">
+            <p className="font-serif text-2xl leading-snug text-paper sm:text-4xl">
               {profile.aboutLead}
             </p>
           </Reveal>
@@ -19,7 +19,7 @@ export function About() {
           <div className="space-y-5">
             {profile.aboutBody.map((para, i) => (
               <Reveal key={i} delay={i * 0.08}>
-                <p className="font-serif text-base leading-relaxed text-muted-foreground sm:text-xl">
+                <p className="font-serif text-base leading-relaxed text-paper/80 sm:text-xl">
                   {para}
                 </p>
               </Reveal>
@@ -29,19 +29,19 @@ export function About() {
 
         <Reveal delay={0.24}>
           <div className="mt-10">
-            <h3 className="mb-4 font-display text-xl uppercase tracking-tight sm:text-2xl">
+            <h3 className="mb-4 font-display text-xl uppercase tracking-tight text-paper sm:text-2xl">
               Essays
             </h3>
-            <div className="flex flex-wrap gap-6 sm:gap-8">
+            <div className="flex flex-wrap gap-4 sm:gap-5">
               {profile.essays.map((e) => (
                 <a
                   key={e.url}
                   href={e.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="group flex w-full items-center gap-4 sm:w-auto"
+                  className="group flex w-full items-center gap-4 rounded-xl border-2 border-ink bg-beam p-3 transition-transform hover:-translate-y-1 hover:shadow-[6px_6px_0_0_hsl(var(--ink))] sm:w-auto"
                 >
-                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border-2 border-ink sm:h-24 sm:w-24">
+                  <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg border-2 border-ink sm:h-20 sm:w-20">
                     <Image
                       src={e.image}
                       alt={e.title}
@@ -49,7 +49,7 @@ export function About() {
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <p className="max-w-[260px] font-serif text-sm leading-snug group-hover:underline sm:text-base">
+                  <p className="max-w-[220px] font-serif text-sm leading-snug text-ink group-hover:underline sm:text-base">
                     {e.title}
                   </p>
                 </a>
