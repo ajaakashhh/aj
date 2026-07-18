@@ -1,10 +1,10 @@
-"use client";
-import { motion } from "framer-motion";
+import { Marquee } from "@/components/marquee";
 import Image from "next/image";
 
 export function Hero() {
   return (
     <section id="top" className="sticky top-0 z-0 flex h-screen flex-col overflow-hidden bg-beam">
+
       {/* Top row: name + get in touch */}
       <div className="container relative z-20 flex items-start justify-between pt-8 pb-4">
         <span className="font-display text-sm uppercase leading-tight tracking-wide">
@@ -12,38 +12,44 @@ export function Hero() {
         </span>
       </div>
 
-      {/* Headline + photo, normal document flow, photo overlaps via negative margin
-          instead of being absolutely positioned over independently-moving text. */}
-      <div className="container relative flex flex-1 flex-col items-center justify-center text-center">
-        <p className="font-sans text-sm font-bold uppercase tracking-widest text-ink/70 sm:text-base">
-          Based in Chennai
-        </p>
+      {/* Text rows fill ALL remaining height, edge to edge, no centering gap */}
+      <div className="relative flex-1 flex flex-col">
 
-        <h1 className="mt-2 font-display uppercase leading-[0.85] text-[13vw] sm:text-[9vw] lg:text-[7vw]">
-          Writer.
-          <br />
-          Journalist.
-        </h1>
+        <div className="flex-1 flex items-center border-y border-ink/30">
+          <Marquee
+            items={["Writer.", "Writer.", "Writer.",]}
+            className="font-display text-white text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]"
+          />
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="relative -mt-10 -mb-10 h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] lg:-mt-16 lg:-mb-16 lg:h-[340px] lg:w-[340px]"
-        >
+        <div className="flex-1 flex items-center border-b border-ink/30">
+          <Marquee
+            items={["Journalist.", "Journalist.", "Journalist.",]}
+            className="font-display text-[9vw] uppercase leading-none sm:text-[4vw] lg:text-[5.5vw]"
+          />
+        </div>
+
+        <div className="flex-1 flex items-center border-b border-ink/30">
+          <Marquee
+            items={["Media Producer.", "Media Producer.", "Media Producer.",]}
+            className="font-display text-white text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]"
+          />
+        </div>
+
+        {/* Photo centered dead-center of this whole block, both axes. Static, no animation. */}
+        <div className="absolute inset-0 z-10 m-auto w-[260px] h-[360px] sm:w-[300px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
           <Image
             src="/aj.png"
             alt="Aakash Srividhya portrait"
             fill
-            className="object-contain"
+            className="object-cover"
             priority
           />
-        </motion.div>
+        </div>
 
-        <h2 className="text-stroke mt-2 font-display uppercase leading-[0.85] text-[13vw] sm:text-[9vw] lg:text-[7vw]">
-          Media Producer.
-        </h2>
       </div>
+
+
     </section>
   );
 }
