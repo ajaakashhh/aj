@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="top" className="bg-beam relative min-h-screen overflow-hidden flex flex-col">
+    <section id="top" className="sticky top-0 z-0 flex min-h-screen flex-col overflow-hidden bg-beam">
 
       {/* Top row: name + get in touch */}
       <div className="container relative z-20 flex items-start justify-between pt-8 pb-4">

@@ -5,7 +5,7 @@ import { ArrowUpRight, Mail } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 bg-signal text-paper">
+    <section id="contact" className="sticky top-0 z-[80] flex min-h-screen flex-col justify-center scroll-mt-20 bg-signal text-paper">
       <div className="container py-24 sm:py-32">
         <Reveal>
           <p className="font-sans text-xs font-bold uppercase tracking-widest">08 / Contact</p>

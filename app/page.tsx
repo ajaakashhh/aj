@@ -14,21 +14,16 @@ export default function Home() {
   return (
     <main className="relative">
       <Nav />
-      <section className="sticky top-0 h-screen z-0">
-        <Hero />
-      </section>
-      <section className="relative z-10 bg-paper min-h-screen">
-        <About />
-
-        <Writing />
-        <Video />
-        <Experience />
-        <Government />
-        <Creative />
-        <Press />
-        <Contact />
-        <Footer />
-      </section>
+      <Hero />
+      <About />
+      <Writing />
+      <Video />
+      <Experience />
+      <Government />
+      <Creative />
+      <Press />
+      <Contact />
+      <Footer />
     </main>
   );
 }

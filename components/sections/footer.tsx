@@ -2,7 +2,7 @@ import { profile } from "@/lib/data";
 
 export function Footer() {
   return (
-    <footer className="border-t-2 border-ink bg-paper">
+    <footer className="relative z-[90] border-t-2 border-ink bg-paper">
       <div className="container flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between">
         <p className="font-display text-xl uppercase tracking-tight">
           Aakash Srividhya
