@@ -81,7 +81,7 @@ export function VideoCarousel({
           type="button"
           onClick={() => scroll(1)}
           aria-label="Scroll right"
-          className="absolute right-0 top-[38%] hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border-2 border-ink bg-beam text-ink shadow-[3px_3px_0_0_hsl(var(--ink))] transition-transform hover:translate-x-[1px] hover:translate-y-[calc(-50%+1px)] sm:flex"
+          className="absolute right-2 top-[38%] flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border-2 border-ink bg-beam text-ink shadow-[3px_3px_0_0_hsl(var(--ink))] transition-transform hover:translate-x-[1px] hover:translate-y-[calc(-50%+1px)]"
         >
           <ChevronRight className="h-5 w-5" />
         </button>

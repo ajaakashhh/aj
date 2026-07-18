@@ -10,9 +10,9 @@ export function Contact() {
         <Reveal>
           <p className="font-sans text-xs font-bold uppercase tracking-widest">09 / Contact</p>
           <h2 className="mt-3 font-display text-[min(13vw,10vh)] uppercase leading-[0.85] tracking-tight">
-            Got a story?
+            The storyteller
             <br />
-            Let&apos;s tell it right.
+            you&apos;re looking for.
           </h2>
         </Reveal>
 
