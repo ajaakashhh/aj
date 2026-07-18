@@ -52,11 +52,14 @@ export function HeroAbout() {
         >
           <motion.div
             style={{ scale: heroScale, filter: heroFilter }}
-            className="flex flex-1 flex-col divide-y divide-beam/20"
+            className="flex flex-1 flex-col justify-center divide-y divide-beam/20 lg:justify-normal"
           >
             {roles.map(({ word, Icon }) => (
-              <div key={word} className="flex flex-1 items-center justify-between px-6 sm:px-10">
-                <span className="font-display uppercase leading-none text-beam text-[10vw] sm:text-[8vw] lg:text-[6.5vw]">
+              <div
+                key={word}
+                className="flex items-center justify-between px-6 py-6 sm:px-10 lg:flex-1 lg:py-0"
+              >
+                <span className="font-display uppercase leading-none text-beam text-[10.5vw] sm:text-[8vw] lg:text-[6.5vw]">
                   {word}
                 </span>
                 <Icon className="hidden h-24 w-24 shrink-0 text-beam/60 lg:block xl:h-32 xl:w-32" />
