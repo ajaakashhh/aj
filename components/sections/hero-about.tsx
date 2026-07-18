@@ -4,40 +4,11 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { profile } from "@/lib/data";
 import { SectionLabel } from "@/components/section-label";
-import { PenLine, Newspaper, Clapperboard } from "lucide-react";
 
 const WRAPPER_VH = 220;
 const ABOUT_ANCHOR_PROGRESS = 0.6;
 
-const roles = [
-  {
-    index: "01",
-    word: "Writer",
-    caption: "Long-form essays & political commentary",
-    icon: PenLine,
-    bg: "bg-beam",
-    text: "text-ink",
-    badge: "bg-ink text-beam",
-  },
-  {
-    index: "02",
-    word: "Journalist",
-    caption: "Fact-checks & ground reporting",
-    icon: Newspaper,
-    bg: "bg-signal",
-    text: "text-paper",
-    badge: "bg-paper text-signal",
-  },
-  {
-    index: "03",
-    word: "Media Producer",
-    caption: "Reels, docs & political explainers",
-    icon: Clapperboard,
-    bg: "bg-ink",
-    text: "text-beam",
-    badge: "bg-beam text-ink",
-  },
-];
+const words = ["Writer", "Journalist", "Media Producer"];
 
 export function HeroAbout() {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -72,34 +43,17 @@ export function HeroAbout() {
         <motion.section
           id="top"
           style={{ opacity: heroOpacity, pointerEvents: heroPointerEvents }}
-          className="absolute inset-0 flex h-full flex-col overflow-hidden bg-beam pt-16"
+          className="absolute inset-0 flex h-full flex-col overflow-hidden bg-ink pt-16"
         >
           <motion.div
             style={{ scale: heroScale, filter: heroFilter }}
-            className="flex flex-1 flex-col"
+            className="flex flex-1 flex-col divide-y divide-beam/20"
           >
-            {roles.map((role) => (
-              <div
-                key={role.index}
-                className={`flex flex-1 items-center justify-between gap-4 border-b border-ink/20 px-6 sm:px-10 ${role.bg} ${role.text}`}
-              >
-                <div className="flex min-w-0 items-center gap-4 sm:gap-6">
-                  <span
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold ${role.badge}`}
-                  >
-                    {role.index}
-                  </span>
-                  <span className="font-display uppercase leading-none text-[7vw] sm:text-[5.5vw] lg:text-[4.5vw]">
-                    {role.word}
-                  </span>
-                </div>
-
-                <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-                  <p className="hidden max-w-[140px] text-right font-sans text-[10px] font-bold uppercase leading-snug tracking-wide sm:block">
-                    {role.caption}
-                  </p>
-                  <role.icon className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" />
-                </div>
+            {words.map((word) => (
+              <div key={word} className="flex flex-1 items-center px-6 sm:px-10">
+                <span className="font-display uppercase leading-none text-beam text-[9vw] sm:text-[6vw] lg:text-[5.5vw]">
+                  {word}
+                </span>
               </div>
             ))}
           </motion.div>
