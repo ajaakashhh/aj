@@ -9,7 +9,7 @@ export function Instagram() {
   return (
     <section
       id="instagram"
-      className="sticky top-0 z-20 flex h-screen flex-col justify-start overflow-hidden scroll-mt-20 border-y-2 border-ink bg-signal text-paper"
+      className="sticky top-0 z-20 flex min-h-screen flex-col justify-center scroll-mt-20 border-y-2 border-ink bg-signal text-paper"
     >
       <div className="hatch pointer-events-none absolute inset-0 opacity-10" aria-hidden />
 
@@ -40,7 +40,7 @@ export function Instagram() {
               href={profile.links.instagram}
               target="_blank"
               rel="noreferrer"
-              className="mx-auto block w-full max-w-[220px] -rotate-2 rounded-2xl border-2 border-dashed border-beam bg-ink p-2 shadow-[8px_8px_0_0_hsl(var(--ink))] transition-transform hover:rotate-0"
+              className="mx-auto block w-full max-w-[260px] -rotate-2 rounded-2xl border-2 border-dashed border-beam bg-ink p-2 shadow-[8px_8px_0_0_hsl(var(--ink))] transition-transform hover:rotate-0"
             >
               <div className="overflow-hidden rounded-xl">
                 <Image
