@@ -43,7 +43,7 @@ export function HeroAbout() {
         aria-hidden
       />
 
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-[100svh] overflow-hidden">
         {/* Hero layer */}
         <motion.section
           id="top"
