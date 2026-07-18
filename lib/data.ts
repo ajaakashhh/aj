@@ -18,6 +18,12 @@ export const profile = {
     "Data-driven",
     "Accountability-oriented",
   ],
+  instagramStats: {
+    posts: 59,
+    followers: 3707,
+    following: 547,
+    cumulativeViews: "1.5M+",
+  },
   essays: [
     {
       title: "Why India Should Follow Tamil Nadu's Healthcare Model",

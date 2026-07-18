@@ -1,12 +1,10 @@
-import { profile, cadence } from "@/lib/data";
-import { SectionLabel } from "@/components/section-label";
+import { profile } from "@/lib/data";
 import { Reveal } from "@/components/reveal";
 import { Sparkle } from "lucide-react";
 import Image from "next/image";
 
 export function Instagram() {
-  const reelsPerMonth = cadence.find((c) => c.label === "Reels");
-  const longForm = cadence.find((c) => c.label === "Long-form analysis");
+  const stats = profile.instagramStats;
 
   return (
     <section
@@ -23,8 +21,17 @@ export function Instagram() {
           </h2>
         </div>
 
-        <div className="grid items-center gap-14 md:grid-cols-2">
-          <Reveal>
+        <Reveal>
+          <p className="text-stroke font-display text-[16vw] leading-[0.85] sm:text-[10vw] lg:text-[9vw]">
+            {stats.cumulativeViews}
+          </p>
+          <p className="mt-1 font-sans text-sm font-bold uppercase tracking-widest text-paper sm:text-base">
+            cumulative views across Instagram
+          </p>
+        </Reveal>
+
+        <div className="mt-14 grid items-center gap-14 md:grid-cols-2">
+          <Reveal delay={0.08}>
             <div className="mx-auto w-full max-w-sm rounded-2xl border-2 border-dashed border-beam bg-ink p-6">
               <div className="flex items-center gap-4">
                 <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-paper">
@@ -38,21 +45,23 @@ export function Instagram() {
 
               <div className="mt-6 flex items-center justify-between border-y border-paper/20 py-4 text-center">
                 <div>
-                  <p className="font-display text-2xl text-beam">3.7K</p>
+                  <p className="font-display text-2xl text-beam">{stats.posts}</p>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-paper/60">
+                    Posts
+                  </p>
+                </div>
+                <div>
+                  <p className="font-display text-2xl text-beam">
+                    {stats.followers.toLocaleString()}
+                  </p>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-paper/60">
                     Followers
                   </p>
                 </div>
                 <div>
-                  <p className="font-display text-2xl text-beam">{reelsPerMonth?.value}</p>
+                  <p className="font-display text-2xl text-beam">{stats.following}</p>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-paper/60">
-                    Reels / mo
-                  </p>
-                </div>
-                <div>
-                  <p className="font-display text-2xl text-beam">{longForm?.value}</p>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-paper/60">
-                    Long-form / mo
+                    Following
                   </p>
                 </div>
               </div>
@@ -73,7 +82,7 @@ export function Instagram() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.12}>
+          <Reveal delay={0.16}>
             <div className="mx-auto max-w-sm">
               <div className="mb-6 flex items-end gap-4 text-ink">
                 <Sparkle className="h-7 w-7 fill-current" />
