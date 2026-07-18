@@ -22,14 +22,14 @@ export function Experience() {
                     )}
                   </div>
                   <p className="mt-0.5 font-sans text-[10px] font-bold uppercase tracking-wider text-ink/60">
+                    {job.title}
+                  </p>
+                  <p className="font-sans text-[10px] font-bold uppercase tracking-wider text-ink/60">
                     {job.period}
                   </p>
                 </div>
                 <div>
-                  <p className="font-sans text-xs font-bold uppercase tracking-wider">
-                    {job.title}
-                  </p>
-                  <p className="mt-1 line-clamp-1 max-w-2xl font-serif text-sm leading-snug text-ink/80">
+                  <p className="line-clamp-1 max-w-2xl font-serif text-sm leading-snug text-ink/80">
                     {job.body}
                   </p>
                   <div className="mt-2 flex flex-wrap gap-1.5">
