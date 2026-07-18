@@ -5,10 +5,11 @@ export const profile = {
   oneLine:
     "Writer, Journalist, Media Product and filmmaker.",
   aboutLead:
-    "I build a practice at the meeting point of media analysis, independent storytelling, and leftist cultural criticism.",
+    "I'm a writer and journalist based in Chennai, working at the intersection of politics and media.",
   aboutBody: [
-    "I work as Writer-Coordinator at Narrativ, developing reels and LinkedIn analysis on news, politics, and cinema. It is part of a growing creator presence in Chennai's media and arts spaces.",
-    "This is early-career work, documenting the intersection of politics, culture, and everyday life through writing, video, and visual narratives. I am still finding my full voice, and I am intentional about depth over reach.",
+    "At Narrativ, I produce reel and long-form content across politics, tech, and policy communications.",
+    "My independent work is driven by journalistic instinct, reels made to inform people on political and historical topics, grounded in fact.",
+    "I am also a poet and occassionally a filmmaker.",
   ],
   politicalIdentity: [
     "Leftist",
