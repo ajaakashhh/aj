@@ -31,6 +31,7 @@ export function Hero() {
           <BoulderReveal
             word="Journalist."
             delay={0.5}
+            direction="left"
             textClassName={wordClass}
             curtainClassName="bg-signal"
             figureClassName="text-paper"
