@@ -173,17 +173,6 @@ export const writingThemes = [
   },
 ];
 
-export const governmentWork = [
-  {
-    title: "Minister communications",
-    body: "Minister communications and content work in TNSPC. Described in general terms out of respect for confidentiality.",
-  },
-  {
-    title: "Freelance & press",
-    body: "Freelance work for news organizations and production houses.",
-  },
-];
-
 export const creativeWork = [
   {
     kind: "Poetry",
