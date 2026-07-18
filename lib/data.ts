@@ -42,7 +42,7 @@ export const profile = {
     },
   ],
   links: {
-    instagram: "https://instagram.com/aj.aakashhh",
+    instagram: "https://www.instagram.com/aj.aakashhh/",
     instagramHandle: "@aj.aakashhh",
     linkedin: "https://linkedin.com",
     email: "content@narrativ.in",

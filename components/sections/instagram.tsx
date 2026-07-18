@@ -24,7 +24,7 @@ export function Instagram() {
 
       <Reveal>
         <div className="overflow-hidden border-y-2 border-paper/40 py-2">
-          <p className="text-stroke whitespace-nowrap text-center font-display text-[24vw] leading-none sm:text-[16vw] lg:text-[14vw]">
+          <p className="whitespace-nowrap text-center font-display text-[24vw] leading-none text-beam sm:text-[16vw] lg:text-[14vw]">
             {stats.cumulativeViews}
           </p>
         </div>
@@ -36,7 +36,12 @@ export function Instagram() {
       <div className="container relative py-10 sm:py-14">
         <div className="grid items-center gap-14 md:grid-cols-2">
           <Reveal delay={0.08}>
-            <div className="mx-auto w-full max-w-[280px] -rotate-2 rounded-2xl border-2 border-dashed border-beam bg-ink p-2 shadow-[8px_8px_0_0_hsl(var(--ink))] transition-transform hover:rotate-0">
+            <a
+              href={profile.links.instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="mx-auto block w-full max-w-[280px] -rotate-2 rounded-2xl border-2 border-dashed border-beam bg-ink p-2 shadow-[8px_8px_0_0_hsl(var(--ink))] transition-transform hover:rotate-0"
+            >
               <div className="overflow-hidden rounded-xl">
                 <Image
                   src="/instagram-profile.jpeg"
@@ -46,7 +51,7 @@ export function Instagram() {
                   className="h-auto w-full"
                 />
               </div>
-            </div>
+            </a>
             <p className="mt-4 text-center font-sans text-xs font-bold uppercase tracking-widest text-paper/70">
               {stats.followers.toLocaleString()} followers · {stats.posts} posts ·{" "}
               {profile.links.instagramHandle}
