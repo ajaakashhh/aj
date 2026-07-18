@@ -29,8 +29,8 @@ export function Nav() {
     >
       <div className="container flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border-2 border-ink">
-            <Image src="/aj.png" alt="Aakash Srividhya" fill className="object-cover" />
+          <span className="relative h-9 w-9 shrink-0">
+            <Image src="/aj.png" alt="Aakash Srividhya" fill className="object-contain" />
           </span>
           <span className="font-display text-xl uppercase tracking-tight">
             Aakash <br /> Srividhya
