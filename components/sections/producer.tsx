@@ -5,9 +5,9 @@ import { VideoCarousel } from "@/components/video-carousel";
 
 export function Producer() {
   return (
-    <section id="producer" className="sticky top-0 z-[80] flex h-screen flex-col justify-center overflow-hidden bg-ink py-6 scroll-mt-20 sm:py-8">
+    <section id="producer" className="sticky top-0 z-[60] flex h-screen flex-col justify-center overflow-hidden bg-ink py-6 scroll-mt-20 sm:py-8">
       <div className="container">
-        <SectionLabel index="08" title="Producer" />
+        <SectionLabel index="06" title="Producer" />
       </div>
 
       <Reveal delay={0.1}>

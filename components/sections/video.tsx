@@ -8,9 +8,9 @@ export function Video() {
   const rest = reels.filter((r) => !r.featured);
 
   return (
-    <section id="video" className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
+    <section id="video" className="sticky top-0 z-40 flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
       <div className="container">
-        <SectionLabel index="05" title="Star Performers" theme="light" />
+        <SectionLabel index="04" title="Star Performers" theme="light" />
 
         <Reveal>
           <a

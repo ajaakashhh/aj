@@ -18,10 +18,10 @@ export function NarrativReels() {
   return (
     <section
       id="narrativ-reels"
-      className="sticky top-0 z-[60] flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal scroll-mt-20"
+      className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal scroll-mt-20"
     >
       <div className="container">
-        <SectionLabel index="06" title="Reels for Narrativ" />
+        <SectionLabel index="05" title="Reels for Narrativ" />
 
         <Reveal>
           <p className="max-w-2xl font-serif text-base leading-relaxed text-paper/80">

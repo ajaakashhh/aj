@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export function Essays() {
   return (
-    <section id="essays" className="sticky top-0 z-20 flex h-screen flex-col justify-center overflow-hidden bg-beam py-10 scroll-mt-20 sm:py-14">
+    <section id="essays" className="sticky top-0 z-[70] flex h-screen flex-col justify-center overflow-hidden bg-beam py-10 scroll-mt-20 sm:py-14">
       <div className="container">
-        <SectionLabel index="02" title="Essays" theme="light" />
+        <SectionLabel index="07" title="Essays" theme="light" />
 
         <div className="grid gap-6 sm:grid-cols-3">
           {profile.essays.map((e, i) => (

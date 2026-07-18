@@ -7,13 +7,13 @@ export function Instagram() {
   return (
     <section
       id="instagram"
-      className="sticky top-0 z-30 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal text-paper"
+      className="sticky top-0 z-20 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal text-paper"
     >
       <div className="hatch pointer-events-none absolute inset-0 opacity-10" aria-hidden />
 
       <div className="container relative py-8 sm:py-10">
         <div className="mb-8 flex items-baseline gap-4 border-b-2 border-paper pb-3">
-          <span className="font-display text-lg text-beam">03</span>
+          <span className="font-display text-lg text-beam">02</span>
           <h2 className="font-display text-3xl uppercase tracking-tight sm:text-4xl">
             Instagram Presence
           </h2>
