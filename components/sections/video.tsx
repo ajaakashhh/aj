@@ -24,14 +24,13 @@ export function Video() {
                 <TrendingUp className="h-4 w-4" /> Most watched
               </div>
               <div>
-                <p className="font-display text-5xl leading-none text-signal sm:text-6xl">
+                <p className="font-display text-5xl leading-none text-ink sm:text-6xl">
                   {formatViews(featured.views)}
                 </p>
                 <p className="mt-1 font-sans text-xs font-bold uppercase tracking-widest">
                   views
                 </p>
               </div>
-              <div className="absolute inset-0 hatch opacity-10" aria-hidden />
             </div>
             <div className="flex flex-col justify-between gap-3 border-t-2 border-ink p-5 md:border-l-2 md:border-t-0">
               <div>
@@ -59,7 +58,7 @@ export function Video() {
                 className="group flex h-full flex-col justify-between rounded-xl border-2 border-ink bg-beam p-4 text-ink transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0_0_hsl(var(--ink))]"
               >
                 <div className="flex items-start justify-between">
-                  <span className="font-display text-2xl text-signal">
+                  <span className="font-display text-2xl text-ink">
                     {formatViews(r.views)}
                   </span>
                   <Play className="h-4 w-4 fill-current opacity-40 transition-opacity group-hover:opacity-100" />
