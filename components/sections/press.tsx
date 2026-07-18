@@ -5,8 +5,8 @@ import { Marquee } from "@/components/marquee";
 export function Press() {
   const totalViews = reels.reduce((s, r) => s + r.views, 0);
   return (
-    <section id="press" className="sticky top-0 z-[70] flex h-screen flex-col justify-between overflow-y-auto scroll-mt-20 border-t-2 border-ink bg-ink text-paper">
-      <div className="container py-20 sm:py-28">
+    <section id="press" className="sticky top-0 z-[70] flex h-screen flex-col justify-between overflow-hidden scroll-mt-20 border-t-2 border-ink bg-ink text-paper">
+      <div className="container py-10 sm:py-14">
         <div className="mb-10 flex items-baseline gap-4 border-b-2 border-paper pb-4">
           <span className="font-display text-lg text-beam">07</span>
           <h2 className="font-display text-3xl uppercase tracking-tight sm:text-4xl">

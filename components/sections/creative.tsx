@@ -7,7 +7,7 @@ const icons = { Poetry: BookOpen, "Short film": Clapperboard, Audiobook: Headpho
 
 export function Creative() {
   return (
-    <section id="creative" className="container sticky top-0 z-[60] flex h-screen flex-col justify-start overflow-y-auto bg-paper py-20 scroll-mt-20 sm:py-28">
+    <section id="creative" className="container sticky top-0 z-[60] flex h-screen flex-col justify-start overflow-hidden bg-paper py-10 scroll-mt-20 sm:py-14">
       <SectionLabel index="06" title="Creative Work" />
 
       <div className="grid gap-px overflow-hidden rounded-xl border-2 border-ink bg-ink md:grid-cols-3">

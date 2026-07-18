@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <section id="about" className="container sticky top-0 z-10 flex h-screen flex-col justify-start overflow-y-auto bg-paper py-20 scroll-mt-30">
+    <section id="about" className="container sticky top-0 z-10 flex h-screen flex-col justify-start overflow-hidden bg-paper py-10 scroll-mt-30 sm:py-14">
       <SectionLabel index="01" title="About" />
 
       <div className="grid gap-12 md:grid-cols-[1fr_1.3fr]">

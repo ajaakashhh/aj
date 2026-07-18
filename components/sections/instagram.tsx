@@ -9,11 +9,11 @@ export function Instagram() {
   return (
     <section
       id="instagram"
-      className="sticky top-0 z-20 flex h-screen flex-col justify-start overflow-y-auto scroll-mt-20 border-y-2 border-ink bg-signal text-paper"
+      className="sticky top-0 z-20 flex h-screen flex-col justify-start overflow-hidden scroll-mt-20 border-y-2 border-ink bg-signal text-paper"
     >
       <div className="hatch pointer-events-none absolute inset-0 opacity-10" aria-hidden />
 
-      <div className="container relative pt-20 sm:pt-28">
+      <div className="container relative pt-10 sm:pt-14">
         <div className="mb-6 flex items-baseline gap-4 border-b-2 border-paper pb-4">
           <span className="font-display text-lg text-beam">02</span>
           <h2 className="font-display text-3xl uppercase tracking-tight sm:text-4xl">
@@ -33,14 +33,14 @@ export function Instagram() {
         </p>
       </Reveal>
 
-      <div className="container relative py-10 sm:py-14">
-        <div className="grid items-center gap-14 md:grid-cols-2">
+      <div className="container relative py-6 sm:py-8">
+        <div className="grid items-center gap-10 md:grid-cols-2">
           <Reveal delay={0.08}>
             <a
               href={profile.links.instagram}
               target="_blank"
               rel="noreferrer"
-              className="mx-auto block w-full max-w-[280px] -rotate-2 rounded-2xl border-2 border-dashed border-beam bg-ink p-2 shadow-[8px_8px_0_0_hsl(var(--ink))] transition-transform hover:rotate-0"
+              className="mx-auto block w-full max-w-[220px] -rotate-2 rounded-2xl border-2 border-dashed border-beam bg-ink p-2 shadow-[8px_8px_0_0_hsl(var(--ink))] transition-transform hover:rotate-0"
             >
               <div className="overflow-hidden rounded-xl">
                 <Image
