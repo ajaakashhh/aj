@@ -1,11 +1,11 @@
 import { profile } from "@/lib/data";
 import { SectionLabel } from "@/components/section-label";
 import { Reveal } from "@/components/reveal";
-import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export function About() {
   return (
-    <section id="about" className="container sticky top-0 z-10 flex h-screen flex-col justify-center overflow-y-auto bg-paper py-20 scroll-mt-30">
+    <section id="about" className="container sticky top-0 z-10 flex h-screen flex-col justify-start overflow-y-auto bg-paper py-20 scroll-mt-30">
       <SectionLabel index="01" title="About" />
 
       <div className="grid gap-12 md:grid-cols-[1fr_1.3fr]">
@@ -23,30 +23,39 @@ export function About() {
               </p>
             </Reveal>
           ))}
-
-          <Reveal delay={0.24}>
-            <div className="mt-8">
-              <p className="mb-3 font-sans text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                Essays
-              </p>
-              <div className="space-y-3">
-                {profile.essays.map((e) => (
-                  <a
-                    key={e.url}
-                    href={e.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group flex items-center justify-between gap-4 border-b border-ink/20 pb-2 font-serif text-base leading-snug transition-colors hover:border-ink"
-                  >
-                    <span>{e.title}</span>
-                    <ArrowUpRight className="h-4 w-4 shrink-0 opacity-50 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </Reveal>
         </div>
       </div>
+
+      <Reveal delay={0.24}>
+        <div className="mt-12">
+          <p className="mb-4 font-sans text-xs font-bold uppercase tracking-widest text-muted-foreground">
+            Essays
+          </p>
+          <div className="grid gap-6 sm:grid-cols-3">
+            {profile.essays.map((e) => (
+              <a
+                key={e.url}
+                href={e.url}
+                target="_blank"
+                rel="noreferrer"
+                className="group overflow-hidden rounded-xl border-2 border-ink transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0_0_hsl(var(--ink))]"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <Image
+                    src={e.image}
+                    alt={e.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <p className="bg-paper p-4 font-serif text-sm leading-snug">
+                  {e.title}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </Reveal>
     </section>
   );
 }
