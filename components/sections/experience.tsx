@@ -29,7 +29,7 @@ export function Experience() {
                   </p>
                 </div>
                 <div>
-                  <p className="line-clamp-1 max-w-2xl font-serif text-sm leading-snug text-ink/80">
+                  <p className="line-clamp-2 max-w-2xl font-serif text-sm leading-snug text-ink/80">
                     {job.body}
                   </p>
                   <div className="mt-2 flex flex-wrap gap-1.5">
