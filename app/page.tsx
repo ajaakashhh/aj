@@ -1,5 +1,4 @@
 import { Nav } from "@/components/nav";
-import { PageFlipSound } from "@/components/page-flip-sound";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Instagram } from "@/components/sections/instagram";
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <main className="relative">
       <Nav />
-      <PageFlipSound />
       <Hero />
       <About />
       <Instagram />
