@@ -8,19 +8,10 @@ export function Producer() {
     <section id="producer" className="sticky top-0 z-[80] flex h-screen flex-col justify-center overflow-hidden bg-ink py-6 scroll-mt-20 sm:py-8">
       <div className="container">
         <SectionLabel index="08" title="Producer" />
-        <Reveal>
-          <p className="max-w-2xl font-serif text-sm leading-relaxed text-paper/80 sm:text-base">
-            Documentary credits and a long-running history and politics show. Tap a video to
-            watch.
-          </p>
-        </Reveal>
       </div>
 
       <Reveal delay={0.1}>
         <div className="container mt-5">
-          <p className="mb-2 font-sans text-xs font-bold uppercase tracking-widest text-beam">
-            Documentary
-          </p>
           <VideoCarousel items={producerWork} cardWidth="w-52 sm:w-60" aspect="aspect-[4/3]" />
         </div>
       </Reveal>
