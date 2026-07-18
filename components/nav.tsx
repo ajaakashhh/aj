@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -27,8 +28,13 @@ export function Nav() {
       )}
     >
       <div className="container flex h-16 items-center justify-between">
-        <a href="#top" className="font-display text-xl uppercase tracking-tight">
-          Aakash <br /> Srividhya
+        <a href="#top" className="flex items-center gap-2.5">
+          <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border-2 border-ink">
+            <Image src="/aj.png" alt="Aakash Srividhya" fill className="object-cover" />
+          </span>
+          <span className="font-display text-xl uppercase tracking-tight">
+            Aakash <br /> Srividhya
+          </span>
         </a>
         <nav className="hidden items-center gap-6 md:flex">
           {links.map((l) => (

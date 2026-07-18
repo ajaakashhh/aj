@@ -1,5 +1,4 @@
 import { Marquee } from "@/components/marquee";
-import Image from "next/image";
 
 export function Hero() {
   return (
@@ -33,17 +32,6 @@ export function Hero() {
           <Marquee
             items={["Media Producer.", "Media Producer.", "Media Producer.",]}
             className="font-display text-white text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]"
-          />
-        </div>
-
-        {/* Photo centered dead-center of this whole block, both axes. Static, no animation. */}
-        <div className="absolute inset-0 z-10 m-auto w-[260px] h-[360px] sm:w-[300px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
-          <Image
-            src="/aj.png"
-            alt="Aakash Srividhya portrait"
-            fill
-            className="object-cover"
-            priority
           />
         </div>
 
