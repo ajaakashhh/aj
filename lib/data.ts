@@ -188,16 +188,13 @@ export const creativeWork = [
     kind: "Poetry",
     title: "Kattamaippudaithal",
     body: "Published author of a Tamil poetry collection.",
+    url: "https://www.amazon.in/dp/8119332156",
   },
   {
     kind: "Short film",
     title: "Pugaiyadal",
     body: "Dialogue writer for the short film.",
-  },
-  {
-    kind: "Audiobook",
-    title: "Pocket FM",
-    body: "Story writer for an audiobook on Pocket FM.",
+    url: "https://youtu.be/dibXFHcKhms?si=UxuHOS90rqgL8ppc",
   },
 ];
 

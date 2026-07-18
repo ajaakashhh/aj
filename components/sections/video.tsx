@@ -8,9 +8,9 @@ export function Video() {
   const rest = reels.filter((r) => !r.featured);
 
   return (
-    <section id="video" className="sticky top-0 z-40 flex h-screen flex-col justify-center overflow-hidden bg-signal py-8 scroll-mt-20 sm:py-10">
+    <section id="video" className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
       <div className="container">
-        <SectionLabel index="04" title="Star Performers" />
+        <SectionLabel index="05" title="Star Performers" theme="light" />
 
         <Reveal>
           <a
@@ -33,14 +33,9 @@ export function Video() {
               </div>
             </div>
             <div className="flex flex-col justify-between gap-3 border-t-2 border-ink p-5 md:border-l-2 md:border-t-0">
-              <div>
-                <span className="rounded-full border-2 border-ink bg-paper px-2 py-0.5 font-sans text-[10px] font-bold uppercase tracking-wider text-ink">
-                  {featured.theme}
-                </span>
-                <h3 className="mt-3 font-serif text-xl leading-tight text-ink sm:text-2xl">
-                  {featured.title}
-                </h3>
-              </div>
+              <h3 className="font-serif text-xl leading-tight text-ink sm:text-2xl">
+                {featured.title}
+              </h3>
               <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink text-ink transition-colors group-hover:bg-ink group-hover:text-paper">
                 <Play className="h-5 w-5 fill-current" />
               </div>
@@ -64,9 +59,6 @@ export function Video() {
                   <Play className="h-4 w-4 fill-current opacity-40 transition-opacity group-hover:opacity-100" />
                 </div>
                 <h3 className="mt-3 font-serif text-sm leading-snug">{r.title}</h3>
-                <span className="mt-3 font-sans text-[9px] font-bold uppercase tracking-widest text-ink/60">
-                  {r.theme}
-                </span>
               </a>
             </Reveal>
           ))}

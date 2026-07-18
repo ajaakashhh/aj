@@ -8,12 +8,12 @@ export function CumulativeViews() {
   return (
     <section
       id="views"
-      className="sticky top-0 z-30 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal text-paper scroll-mt-20"
+      className="sticky top-0 z-40 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-paper bg-ink text-paper scroll-mt-20"
     >
       <div className="hatch pointer-events-none absolute inset-0 opacity-10" aria-hidden />
 
       <div className="container relative py-8 sm:py-10">
-        <SectionLabel index="03" title="The Numbers" />
+        <SectionLabel index="04" title="The Numbers" />
 
         <Reveal>
           <p className="whitespace-nowrap text-center font-display text-[min(30vw,45vh)] leading-none text-beam">

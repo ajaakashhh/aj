@@ -10,16 +10,10 @@ export function Contact() {
         <Reveal>
           <p className="font-sans text-xs font-bold uppercase tracking-widest">10 / Contact</p>
           <h2 className="mt-3 font-display text-[min(13vw,10vh)] uppercase leading-[0.85] tracking-tight">
-            Let&apos;s make
+            Got a story?
             <br />
-            something
-            <br />
-            that matters
+            Let&apos;s tell it right.
           </h2>
-          <p className="mt-3 max-w-md font-serif text-sm leading-relaxed text-paper/80 sm:text-base">
-            1.5M+ views, zero compromise on facts. If that sounds like the kind of work you want
-            made, let&apos;s talk.
-          </p>
         </Reveal>
 
         <div className="mt-6 grid gap-3 md:grid-cols-3">
