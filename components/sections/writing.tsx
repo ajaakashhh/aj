@@ -5,7 +5,7 @@ import { PenLine } from "lucide-react";
 
 export function Writing() {
   return (
-    <section id="writing" className="sticky top-0 z-20 flex min-h-screen flex-col justify-center scroll-mt-20 border-y-2 border-ink bg-ink text-paper">
+    <section id="writing" className="sticky top-0 z-20 flex h-screen flex-col justify-center overflow-y-auto scroll-mt-20 border-y-2 border-ink bg-ink text-paper">
       <div className="container py-20 sm:py-28">
         <div className="mb-10 flex items-baseline gap-4 border-b-2 border-paper pb-4">
           <span className="font-display text-lg text-beam">02</span>

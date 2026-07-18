@@ -18,6 +18,20 @@ export const profile = {
     "Data-driven",
     "Accountability-oriented",
   ],
+  essays: [
+    {
+      title: "Why India Should Follow Tamil Nadu's Healthcare Model",
+      url: "https://medium.com/@ajaakash0007/why-india-should-follow-tamil-nadus-healthcare-model-332f79474346",
+    },
+    {
+      title: "Whose City, Whose Cleanliness?",
+      url: "https://medium.com/@ajaakash0007/whose-city-whose-cleanliness-710572b61af3",
+    },
+    {
+      title: "Pride and Problem in Mari Selvaraj's Bison Kaalamadan",
+      url: "https://medium.com/@ajaakash0007/pride-and-problem-in-mari-selvarajs-bison-kaalamadan-85d367a4df46",
+    },
+  ],
   links: {
     instagram: "https://instagram.com/aj.aakashhh",
     instagramHandle: "@aj.aakashhh",

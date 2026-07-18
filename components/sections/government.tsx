@@ -4,7 +4,7 @@ import { Landmark } from "lucide-react";
 
 export function Government() {
   return (
-    <section id="work" className="sticky top-0 z-50 flex min-h-screen flex-col justify-center scroll-mt-20 border-y-2 border-ink bg-beam">
+    <section id="work" className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-y-auto scroll-mt-20 border-y-2 border-ink bg-beam">
       <div className="container py-20 sm:py-28">
         <div className="mb-10 flex items-baseline gap-4 border-b-2 border-ink pb-4">
           <span className="font-display text-lg text-signal">05</span>
