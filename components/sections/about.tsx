@@ -28,9 +28,9 @@ export function About() {
 
       <Reveal delay={0.24}>
         <div className="mt-12">
-          <p className="mb-4 font-sans text-xs font-bold uppercase tracking-widest text-muted-foreground">
+          <h3 className="mb-4 font-display text-2xl uppercase tracking-tight sm:text-3xl">
             Essays
-          </p>
+          </h3>
           <div className="grid gap-6 sm:grid-cols-3">
             {profile.essays.map((e) => (
               <a
