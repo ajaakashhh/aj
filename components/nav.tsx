@@ -32,7 +32,12 @@ export function Nav() {
           <span className="relative h-12 w-12 shrink-0">
             <Image src="/aj.png" alt="Aakash Srividhya" fill className="object-contain" />
           </span>
-          <span className="font-display text-xl uppercase tracking-tight">
+          <span
+            className={cn(
+              "font-display text-xl uppercase tracking-tight transition-colors duration-300",
+              scrolled ? "text-ink" : "text-beam"
+            )}
+          >
             Aakash <br /> Srividhya
           </span>
         </a>
@@ -41,7 +46,10 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="underline-signal font-sans text-xs font-bold uppercase tracking-wider"
+              className={cn(
+                "underline-signal font-sans text-xs font-bold uppercase tracking-wider transition-colors duration-300",
+                scrolled ? "text-ink" : "text-beam"
+              )}
             >
               {l.label}
             </a>

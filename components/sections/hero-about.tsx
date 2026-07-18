@@ -51,7 +51,7 @@ export function HeroAbout() {
           >
             {words.map((word) => (
               <div key={word} className="flex flex-1 items-center px-6 sm:px-10">
-                <span className="font-display uppercase leading-none text-beam text-[9vw] sm:text-[6vw] lg:text-[5.5vw]">
+                <span className="font-display uppercase leading-none text-beam text-[10vw] sm:text-[8vw] lg:text-[6.5vw]">
                   {word}
                 </span>
               </div>
