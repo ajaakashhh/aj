@@ -4,10 +4,10 @@ import { Landmark } from "lucide-react";
 
 export function Government() {
   return (
-    <section id="work" className="sticky top-0 z-[70] flex h-screen flex-col justify-center overflow-hidden scroll-mt-20 border-y-2 border-ink bg-beam">
+    <section id="work" className="sticky top-0 z-[80] flex h-screen flex-col justify-center overflow-hidden scroll-mt-20 border-y-2 border-ink bg-beam">
       <div className="container py-8 sm:py-10">
         <div className="mb-6 flex items-baseline gap-4 border-b-2 border-ink pb-3">
-          <span className="font-display text-lg text-signal">07</span>
+          <span className="font-display text-lg text-signal">08</span>
           <h2 className="font-display text-3xl uppercase tracking-tight sm:text-4xl">
             Political & Government Work
           </h2>

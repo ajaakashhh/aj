@@ -7,6 +7,7 @@ import { CumulativeViews } from "@/components/sections/cumulative-views";
 import { Video } from "@/components/sections/video";
 import { NarrativReels } from "@/components/sections/narrativ-reels";
 import { Experience } from "@/components/sections/experience";
+import { Producer } from "@/components/sections/producer";
 import { Government } from "@/components/sections/government";
 import { Creative } from "@/components/sections/creative";
 import { Contact } from "@/components/sections/contact";
@@ -24,6 +25,7 @@ export default function Home() {
       <Video />
       <NarrativReels />
       <Experience />
+      <Producer />
       <Government />
       <Creative />
       <Contact />

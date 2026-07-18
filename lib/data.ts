@@ -122,13 +122,34 @@ export const reels = [
 ];
 
 export const narrativReels = [
-  { title: "Narrativ reel, placeholder 1", url: "#" },
-  { title: "Narrativ reel, placeholder 2", url: "#" },
-  { title: "Narrativ reel, placeholder 3", url: "#" },
-  { title: "Narrativ reel, placeholder 4", url: "#" },
-  { title: "Narrativ reel, placeholder 5", url: "#" },
-  { title: "Narrativ reel, placeholder 6", url: "#" },
-  { title: "Narrativ reel, placeholder 7", url: "#" },
+  { url: "https://www.instagram.com/reel/Da7Tz29Rga6/", image: "/narrativ-reel-1.jpg" },
+  { url: "https://www.instagram.com/sancraft_industries/reel/Daz9uO5psay/", image: "/narrativ-reel-2.jpg" },
+  { url: "https://www.instagram.com/dinesharjun/reel/Da4HX0Bxj_k/", image: "/narrativ-reel-3.jpg" },
+  { url: "https://www.instagram.com/onealphaventures/reel/DanDk-gNPWB/", image: "/narrativ-reel-4.jpg" },
+  { url: "https://www.instagram.com/sancraft_industries/reel/DaxUFE3pdRy/", image: "/narrativ-reel-5.jpg" },
+  { url: "https://www.instagram.com/dinesharjun/reel/Da2fvl5xCWR/", image: "/narrativ-reel-6.jpg" },
+  { url: "https://www.instagram.com/sancraft_industries/reel/DanBGt3pcZX/", image: "/narrativ-reel-7.jpg" },
+];
+
+export const producerWork = [
+  {
+    title: "Nochikuppam Untold Story",
+    role: "Content Producer",
+    url: "https://youtu.be/dkcLSL-HYiw?si=MquqXbnTicvtNxVW",
+    image: "/producer-nochikuppam.jpg",
+  },
+  {
+    title: "Untold Story of Chennai Fishermen",
+    role: "Content Producer",
+    url: "https://www.youtube.com/watch?v=QoXwU_xXjhc",
+    image: "/producer-fishermen.jpg",
+  },
+  {
+    title: "Kaalam Pesum Kadhai",
+    role: "Script Writer & Producer",
+    url: "https://www.youtube.com/playlist?list=PLjN-_0QkV0ml7AsvLImWCVM20JLgOzliF",
+    image: "/producer-kaalampesumkadhai.jpg",
+  },
 ];
 
 export const writingThemes = [
@@ -178,11 +199,6 @@ export const creativeWork = [
     kind: "Audiobook",
     title: "Pocket FM",
     body: "Story writer for an audiobook on Pocket FM.",
-  },
-  {
-    kind: "Documentary",
-    title: "On-Screen & Documentary Work",
-    body: "Content producer for short documentaries on Chennai's coastal communities, plus on-screen reporting.",
   },
 ];
 
