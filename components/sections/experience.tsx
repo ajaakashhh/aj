@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal";
 
 export function Experience() {
   return (
-    <section id="experience" className="sticky top-0 z-[80] flex h-screen flex-col justify-center overflow-hidden bg-beam py-6 scroll-mt-20 sm:py-8">
+    <section id="experience" className="flex h-screen flex-col justify-center overflow-hidden bg-beam py-6 scroll-mt-20 sm:py-8">
       <div className="container">
         <SectionLabel index="08" title="Work History" theme="light" />
 

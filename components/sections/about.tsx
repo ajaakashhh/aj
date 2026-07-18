@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal";
 
 export function About() {
   return (
-    <section id="about" className="sticky top-0 z-10 flex h-screen flex-col justify-center overflow-hidden bg-paper py-14 scroll-mt-30 sm:py-20">
+    <section id="about" className="flex h-screen flex-col justify-center overflow-hidden bg-paper py-14 scroll-mt-30 sm:py-20">
       <div className="container">
         <SectionLabel index="01" title="About" theme="light" />
 
