@@ -86,14 +86,49 @@ export const work = [
 ];
 
 export const reels = [
-  { title: "Minister Keerthana's misleading claims, debunked", views: 611000, featured: true, theme: "Fact-check" },
-  { title: "Vijay did not break caste calculations", views: 337000, theme: "Political analysis" },
-  { title: "Minister Keerthana's misleading claims, debunked", views: 124000, theme: "Fact-check" },
-  { title: "Aavin vs Amul", views: 77000, theme: "Policy" },
-  { title: "Mekadatu is problematic for Karnataka as well", views: 73800, theme: "Policy" },
-  { title: "Jal Jeevan 2.0 signed while JJM 1 funds are pending", views: 49000, theme: "Accountability" },
-  { title: "Tamil Nadu debt claim by CM Vijay is misleading", views: 28000, theme: "Fact-check" },
-  { title: "Minister Keerthana's Sivakasi export claim, debunked", views: 23700, theme: "Fact-check" },
+  {
+    title: "Minister Keerthana's misleading claims, debunked",
+    views: 613000,
+    featured: true,
+    theme: "Fact-check",
+    url: "https://www.instagram.com/aj.aakashhh/reel/DY4BMvbxFs5/",
+  },
+  {
+    title: "Vijay did not break any caste calculations",
+    views: 337000,
+    theme: "Political analysis",
+    url: "https://www.instagram.com/aj.aakashhh/reel/DX8nUfVxNR3/",
+  },
+  {
+    title: "Did investments leave Tamil Nadu",
+    views: 125000,
+    theme: "Policy",
+    url: "https://www.instagram.com/aj.aakashhh/reel/DZ6cYudPM8p/",
+  },
+  {
+    title: "Aavin vs Amul problem",
+    views: 77000,
+    theme: "Policy",
+    url: "https://www.instagram.com/aj.aakashhh/reel/DYmxcx-PV1G/",
+  },
+  {
+    title: "Mekadatu issue is beyond Tamil Nadu vs Karnataka fight",
+    views: 75000,
+    theme: "Policy",
+    url: "https://www.instagram.com/aj.aakashhh/reel/DZcCQpVxt63/",
+  },
+  {
+    title: "CM Vijay signing JJM 2.0 while JJM 1 funds are pending",
+    views: 49000,
+    theme: "Accountability",
+    url: "https://www.instagram.com/aj.aakashhh/reel/DZHfviZRw3V/",
+  },
+];
+
+export const narrativReels = [
+  { title: "Narrativ reel, placeholder 1", url: "#" },
+  { title: "Narrativ reel, placeholder 2", url: "#" },
+  { title: "Narrativ reel, placeholder 3", url: "#" },
 ];
 
 export const writingThemes = [

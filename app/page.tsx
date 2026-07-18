@@ -1,8 +1,10 @@
 import { Nav } from "@/components/nav";
+import { PageFlipSound } from "@/components/page-flip-sound";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Instagram } from "@/components/sections/instagram";
 import { Video } from "@/components/sections/video";
+import { NarrativReels } from "@/components/sections/narrativ-reels";
 import { Experience } from "@/components/sections/experience";
 import { Government } from "@/components/sections/government";
 import { Creative } from "@/components/sections/creative";
@@ -14,10 +16,12 @@ export default function Home() {
   return (
     <main className="relative">
       <Nav />
+      <PageFlipSound />
       <Hero />
       <About />
       <Instagram />
       <Video />
+      <NarrativReels />
       <Experience />
       <Government />
       <Creative />
