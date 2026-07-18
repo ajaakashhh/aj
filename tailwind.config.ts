@@ -38,20 +38,6 @@ const config: Config = {
         md: "calc(var(--radius) - 4px)",
         sm: "calc(var(--radius) - 8px)",
       },
-      keyframes: {
-        marquee: {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-50%)" },
-        },
-        "marquee-rev": {
-          from: { transform: "translateX(-50%)" },
-          to: { transform: "translateX(0)" },
-        },
-      },
-      animation: {
-        marquee: "marquee 30s linear infinite",
-        "marquee-rev": "marquee-rev 30s linear infinite",
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],

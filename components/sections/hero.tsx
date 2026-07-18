@@ -1,4 +1,8 @@
-import { Marquee } from "@/components/marquee";
+import { DragReveal } from "@/components/drag-reveal";
+
+const wordClass =
+  "font-display text-ink text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]";
+const labelClass = "font-sans text-xs font-bold uppercase tracking-widest sm:text-sm";
 
 export function Hero() {
   return (
@@ -14,24 +18,30 @@ export function Hero() {
       {/* Text rows fill ALL remaining height, edge to edge, no centering gap */}
       <div className="relative flex-1 flex flex-col">
 
-        <div className="flex-1 flex items-center border-y border-ink/30">
-          <Marquee
-            items={["Writer.", "Writer.", "Writer.",]}
-            className="font-display text-white text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]"
+        <div className="flex-1 border-y border-ink/30">
+          <DragReveal
+            word="Writer."
+            textClassName={wordClass}
+            curtainClassName="bg-ink text-beam"
+            labelClassName={labelClass}
           />
         </div>
 
-        <div className="flex-1 flex items-center border-b border-ink/30">
-          <Marquee
-            items={["Journalist.", "Journalist.", "Journalist.",]}
-            className="font-display text-[9vw] uppercase leading-none sm:text-[4vw] lg:text-[5.5vw]"
+        <div className="flex-1 border-b border-ink/30">
+          <DragReveal
+            word="Journalist."
+            textClassName={wordClass}
+            curtainClassName="bg-signal text-paper"
+            labelClassName={labelClass}
           />
         </div>
 
-        <div className="flex-1 flex items-center border-b border-ink/30">
-          <Marquee
-            items={["Media Producer.", "Media Producer.", "Media Producer.",]}
-            className="font-display text-white text-[9vw] uppercase leading-none sm:text-[6vw] lg:text-[5.5vw]"
+        <div className="flex-1 border-b border-ink/30">
+          <DragReveal
+            word="Media Producer."
+            textClassName={wordClass}
+            curtainClassName="bg-ink text-beam"
+            labelClassName={labelClass}
           />
         </div>
 
