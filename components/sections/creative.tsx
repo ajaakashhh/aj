@@ -8,9 +8,9 @@ const rotation = ["-rotate-2", "rotate-2"];
 
 export function Creative() {
   return (
-    <section id="creative" className="sticky top-0 z-[80] flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
+    <section id="creative" className="sticky top-0 z-[70] flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
       <div className="container">
-        <SectionLabel index="08" title="Creative Work" theme="light" />
+        <SectionLabel index="07" title="Creative Work" theme="light" />
 
         <div className="grid gap-8 sm:grid-cols-2">
           {creativeWork.map((c, i) => (

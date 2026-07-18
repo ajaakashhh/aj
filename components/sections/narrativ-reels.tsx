@@ -3,7 +3,8 @@ import { useRef } from "react";
 import { narrativReels } from "@/lib/data";
 import { SectionLabel } from "@/components/section-label";
 import { Reveal } from "@/components/reveal";
-import { ChevronRight, Play } from "lucide-react";
+import { InstagramReelTrigger } from "@/components/instagram-reel-trigger";
+import { ChevronRight, Play, Sparkle } from "lucide-react";
 import Image from "next/image";
 
 export function NarrativReels() {
@@ -18,30 +19,24 @@ export function NarrativReels() {
   return (
     <section
       id="narrativ-reels"
-      className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal scroll-mt-20"
+      className="sticky top-0 z-40 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal scroll-mt-20"
     >
-      <div className="container">
-        <SectionLabel index="05" title="Reels for Narrativ" />
-
-        <Reveal>
-          <p className="max-w-2xl font-serif text-base leading-relaxed text-paper/80">
-            Reel production for Narrativ&apos;s clients.
-          </p>
-        </Reveal>
+      <div className="container relative">
+        <Sparkle className="absolute right-6 top-0 hidden h-6 w-6 fill-current text-beam sm:block" />
+        <SectionLabel index="04" title="Reels for Narrativ" />
       </div>
 
       <Reveal delay={0.1}>
-        <div className="container relative mt-8">
+        <div className="container relative">
           <div
             ref={rowRef}
             className="no-scrollbar -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth px-6 pb-2"
           >
             {narrativReels.map((r, i) => (
-              <a
+              <InstagramReelTrigger
                 key={r.url}
-                href={r.url}
-                target="_blank"
-                rel="noreferrer"
+                url={r.url}
+                title={`Narrativ reel ${i + 1}`}
                 className="group relative w-56 shrink-0 snap-start sm:w-64"
               >
                 <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl border-2 border-ink">
@@ -60,7 +55,7 @@ export function NarrativReels() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </InstagramReelTrigger>
             ))}
           </div>
 

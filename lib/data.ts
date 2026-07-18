@@ -3,13 +3,13 @@ export const profile = {
   role: "Writer & Filmmaker",
   location: "Chennai",
   oneLine:
-    "Writer, Journalist, Media Product and filmmaker.",
+    "Writer, Journalist, Media Producer, and Filmmaker.",
   aboutLead:
     "I'm a writer and journalist based in Chennai, working at the intersection of politics and media.",
   aboutBody: [
     "At Narrativ, I produce reel and long-form content across politics, tech, and policy communications.",
     "My independent work is driven by journalistic instinct, reels made to inform people on political and historical topics, grounded in fact.",
-    "I am also a poet and occassionally a filmmaker.",
+    "I am also a poet and occasionally a filmmaker.",
   ],
   politicalIdentity: [
     "Leftist",
@@ -96,7 +96,7 @@ export const reels = [
     url: "https://www.instagram.com/aj.aakashhh/reel/DX8nUfVxNR3/",
   },
   {
-    title: "Did investments leave Tamil Nadu",
+    title: "Did investments leave Tamil Nadu?",
     views: 125000,
     theme: "Policy",
     url: "https://www.instagram.com/aj.aakashhh/reel/DZ6cYudPM8p/",

@@ -3,7 +3,6 @@ import { PageFlipSound } from "@/components/page-flip-sound";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Instagram } from "@/components/sections/instagram";
-import { CumulativeViews } from "@/components/sections/cumulative-views";
 import { Video } from "@/components/sections/video";
 import { NarrativReels } from "@/components/sections/narrativ-reels";
 import { Producer } from "@/components/sections/producer";
@@ -21,7 +20,6 @@ export default function Home() {
       <Hero />
       <About />
       <Instagram />
-      <CumulativeViews />
       <Video />
       <NarrativReels />
       <Producer />
