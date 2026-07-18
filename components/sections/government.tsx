@@ -4,10 +4,10 @@ import { Landmark } from "lucide-react";
 
 export function Government() {
   return (
-    <section id="work" className="sticky top-0 z-[60] flex h-screen flex-col justify-center overflow-hidden scroll-mt-20 border-y-2 border-ink bg-beam">
+    <section id="work" className="sticky top-0 z-[70] flex h-screen flex-col justify-center overflow-hidden scroll-mt-20 border-y-2 border-ink bg-beam">
       <div className="container py-8 sm:py-10">
         <div className="mb-6 flex items-baseline gap-4 border-b-2 border-ink pb-3">
-          <span className="font-display text-lg text-signal">06</span>
+          <span className="font-display text-lg text-signal">07</span>
           <h2 className="font-display text-3xl uppercase tracking-tight sm:text-4xl">
             Political & Government Work
           </h2>
@@ -20,10 +20,10 @@ export function Government() {
           </p>
         </Reveal>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {governmentWork.map((g, i) => (
             <Reveal key={g.title} delay={i * 0.1}>
-              <div className="flex h-full flex-col rounded-xl border-2 border-ink bg-paper p-4 sm:p-5">
+              <div className="flex h-full flex-col rounded-xl border-2 border-ink bg-paper p-5 sm:p-6">
                 <Landmark className="mb-3 h-5 w-5 text-signal" />
                 <h3 className="font-display text-base uppercase leading-tight tracking-tight sm:text-lg">
                   {g.title}

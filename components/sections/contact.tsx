@@ -9,13 +9,17 @@ export function Contact() {
       <div className="container py-8 sm:py-10">
         <Reveal>
           <p className="font-sans text-xs font-bold uppercase tracking-widest">09 / Contact</p>
-          <h2 className="mt-3 font-display text-[min(13vw,11vh)] uppercase leading-[0.85] tracking-tight">
+          <h2 className="mt-3 font-display text-[min(13vw,10vh)] uppercase leading-[0.85] tracking-tight">
             Let&apos;s make
             <br />
             something
             <br />
             that matters
           </h2>
+          <p className="mt-3 max-w-md font-serif text-sm leading-relaxed text-paper/80 sm:text-base">
+            1.5M+ views, zero compromise on facts. If that sounds like the kind of work you want
+            made, let&apos;s talk.
+          </p>
         </Reveal>
 
         <div className="mt-6 grid gap-4 border-t-2 border-paper/40 pt-4 md:grid-cols-3">
@@ -48,7 +52,7 @@ export function Contact() {
               rel="noreferrer"
               className="group flex items-center justify-between border-b-2 border-paper/40 pb-1 font-sans text-xs font-bold uppercase tracking-widest sm:text-sm"
             >
-              Instagram {profile.links.instagramHandle}
+              Instagram
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
           </Reveal>

@@ -45,7 +45,7 @@ export const profile = {
     instagram: "https://www.instagram.com/aj.aakashhh/",
     instagramHandle: "@aj.aakashhh",
     linkedin: "https://linkedin.com",
-    email: "content@narrativ.in",
+    email: "ajaakash0007@gmail.com",
   },
 };
 
@@ -55,32 +55,28 @@ export const work = [
     title: "Writer-Coordinator",
     period: "Sep 2025 to present",
     current: true,
-    body:
-      "End-to-end reel production across EV, crypto, quantum computing, electronics manufacturing, and industrial real estate. Political and government policy communications, including work managing communications for a minister under the previous Tamil Nadu government tenure, and media content produced for the Tamil Nadu State Planning Commission.",
-    tags: ["Raptee (EV)", "Giottus (Crypto)", "XeedQ (Quantum)", "OneAlpha Ventures", "Policy comms"],
+    body: "Government communications, reel production, content writing, and policy campaigns.",
+    tags: ["Government comms", "Reel production", "Content writing", "Policy campaigns"],
   },
   {
     org: "IBC Tamil",
     title: "Social Media Executive & Show Producer",
     period: "Jun 2024 to Sep 2025",
-    body:
-      "End-to-end content and social strategy across Instagram, Facebook, Twitter, Threads, WhatsApp, Telegram, and YouTube. Producer, R&D lead, and script writer for Kaalam Pesum Kadhai, with ground reporting when required.",
-    tags: ["Show production", "Social strategy", "Scriptwriting", "Ground reporting"],
+    body: "Political journalism, reporting, show production and social media strategy.",
+    tags: ["Political journalism", "Reporting", "Show production", "Social strategy"],
   },
   {
     org: "Galatta Media",
     title: "Social Media Executive & Executive Producer",
     period: "Feb 2023 to May 2024",
-    body:
-      "Cinema news articles in English, social media management, and post-production for YouTube Shorts.",
+    body: "Cinema journalism, social media management, and post-production for YouTube Shorts.",
     tags: ["Cinema journalism", "Post-production", "YouTube Shorts"],
   },
   {
     org: "Nautone",
     title: "Content Writing Intern",
     period: "Mar 2022 to Oct 2022",
-    body:
-      "Digital marketing and e-commerce content under senior strategist supervision.",
+    body: "Digital marketing and e-commerce content.",
     tags: ["Digital marketing", "E-commerce copy"],
   },
 ];
@@ -129,6 +125,10 @@ export const narrativReels = [
   { title: "Narrativ reel, placeholder 1", url: "#" },
   { title: "Narrativ reel, placeholder 2", url: "#" },
   { title: "Narrativ reel, placeholder 3", url: "#" },
+  { title: "Narrativ reel, placeholder 4", url: "#" },
+  { title: "Narrativ reel, placeholder 5", url: "#" },
+  { title: "Narrativ reel, placeholder 6", url: "#" },
+  { title: "Narrativ reel, placeholder 7", url: "#" },
 ];
 
 export const writingThemes = [
@@ -155,18 +155,11 @@ export const writingThemes = [
 export const governmentWork = [
   {
     title: "Minister communications",
-    body:
-      "Managed communications for a minister under the previous Tamil Nadu government tenure. Described in general terms out of respect for confidentiality.",
+    body: "Minister communications and content work in TNSPC. Described in general terms out of respect for confidentiality.",
   },
   {
-    title: "Tamil Nadu State Planning Commission",
-    body:
-      "Produced media content supporting the work of the State Planning Commission.",
-  },
-  {
-    title: "Political freelance",
-    body:
-      "Freelance work for political parties, political organisations, and production houses.",
+    title: "Freelance & press",
+    body: "Freelance work for news organizations and production houses.",
   },
 ];
 
@@ -185,6 +178,11 @@ export const creativeWork = [
     kind: "Audiobook",
     title: "Pocket FM",
     body: "Story writer for an audiobook on Pocket FM.",
+  },
+  {
+    kind: "Documentary",
+    title: "On-Screen & Documentary Work",
+    body: "Content producer for short documentaries on Chennai's coastal communities, plus on-screen reporting.",
   },
 ];
 

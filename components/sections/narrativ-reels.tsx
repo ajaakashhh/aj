@@ -7,24 +7,23 @@ export function NarrativReels() {
   return (
     <section
       id="narrativ-reels"
-      className="sticky top-0 z-40 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-beam scroll-mt-20"
+      className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-beam scroll-mt-20"
     >
       <div className="container py-8 sm:py-10">
-        <SectionLabel index="04" title="Reels for Narrativ" />
+        <SectionLabel index="05" title="Reels for Narrativ" />
 
         <Reveal>
           <p className="max-w-2xl font-serif text-base leading-relaxed text-ink/70">
-            Reel production for Narrativ's clients across EV, crypto, quantum computing, and
-            policy comms. Links coming soon.
+            Reel production for Narrativ&apos;s clients. Links coming soon.
           </p>
         </Reveal>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {narrativReels.map((r, i) => (
-            <Reveal key={r.title} delay={i * 0.08}>
-              <div className="flex h-32 flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-ink/40 p-4 text-center sm:h-40">
-                <Play className="h-6 w-6 text-ink/40" />
-                <p className="font-sans text-xs font-bold uppercase tracking-widest text-ink/50">
+            <Reveal key={r.title} delay={i * 0.06}>
+              <div className="flex h-20 flex-col items-center justify-center gap-1.5 rounded-xl border-2 border-dashed border-ink/40 p-3 text-center sm:h-24">
+                <Play className="h-5 w-5 text-ink/40" />
+                <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-ink/50">
                   {r.title}
                 </p>
               </div>

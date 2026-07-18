@@ -4,9 +4,9 @@ import { Reveal } from "@/components/reveal";
 
 export function Experience() {
   return (
-    <section id="experience" className="sticky top-0 z-50 flex h-screen flex-col justify-center overflow-hidden bg-paper py-6 scroll-mt-20 sm:py-8">
+    <section id="experience" className="sticky top-0 z-[60] flex h-screen flex-col justify-center overflow-hidden bg-paper py-6 scroll-mt-20 sm:py-8">
       <div className="container">
-        <SectionLabel index="05" title="Work History" />
+        <SectionLabel index="06" title="Work History" />
 
         <div className="border-t-2 border-ink">
           {work.map((job, i) => (
