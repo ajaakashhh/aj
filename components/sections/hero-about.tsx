@@ -4,11 +4,16 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { profile } from "@/lib/data";
 import { SectionLabel } from "@/components/section-label";
+import { WriterIcon, JournalistIcon, ProducerIcon } from "@/components/role-icons";
 
 const WRAPPER_VH = 220;
 const ABOUT_ANCHOR_PROGRESS = 0.6;
 
-const words = ["Writer", "Journalist", "Media Producer"];
+const roles = [
+  { word: "Writer", Icon: WriterIcon },
+  { word: "Journalist", Icon: JournalistIcon },
+  { word: "Media Producer", Icon: ProducerIcon },
+];
 
 export function HeroAbout() {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -49,11 +54,12 @@ export function HeroAbout() {
             style={{ scale: heroScale, filter: heroFilter }}
             className="flex flex-1 flex-col divide-y divide-beam/20"
           >
-            {words.map((word) => (
-              <div key={word} className="flex flex-1 items-center px-6 sm:px-10">
+            {roles.map(({ word, Icon }) => (
+              <div key={word} className="flex flex-1 items-center justify-between px-6 sm:px-10">
                 <span className="font-display uppercase leading-none text-beam text-[10vw] sm:text-[8vw] lg:text-[6.5vw]">
                   {word}
                 </span>
+                <Icon className="hidden h-24 w-24 shrink-0 text-beam/60 lg:block xl:h-32 xl:w-32" />
               </div>
             ))}
           </motion.div>
