@@ -5,10 +5,10 @@ import { ArrowUpRight, Mail } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="sticky top-0 z-[90] flex h-screen flex-col justify-center overflow-hidden bg-signal text-paper">
+    <section id="contact" className="sticky top-0 z-[100] flex h-screen flex-col justify-center overflow-hidden bg-signal text-paper">
       <div className="container py-8 sm:py-10">
         <Reveal>
-          <p className="font-sans text-xs font-bold uppercase tracking-widest">09 / Contact</p>
+          <p className="font-sans text-xs font-bold uppercase tracking-widest">10 / Contact</p>
           <h2 className="mt-3 font-display text-[min(13vw,10vh)] uppercase leading-[0.85] tracking-tight">
             Let&apos;s make
             <br />

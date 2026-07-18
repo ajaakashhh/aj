@@ -133,23 +133,33 @@ export const narrativReels = [
 
 export const producerWork = [
   {
+    id: "dkcLSL-HYiw",
     title: "Nochikuppam Untold Story",
     role: "Content Producer",
-    url: "https://youtu.be/dkcLSL-HYiw?si=MquqXbnTicvtNxVW",
     image: "/producer-nochikuppam.jpg",
   },
   {
+    id: "QoXwU_xXjhc",
     title: "Untold Story of Chennai Fishermen",
     role: "Content Producer",
-    url: "https://www.youtube.com/watch?v=QoXwU_xXjhc",
     image: "/producer-fishermen.jpg",
   },
-  {
-    title: "Kaalam Pesum Kadhai",
-    role: "Script Writer & Producer",
-    url: "https://www.youtube.com/playlist?list=PLjN-_0QkV0ml7AsvLImWCVM20JLgOzliF",
-    image: "/producer-kaalampesumkadhai.jpg",
-  },
+];
+
+export const kaalamPesumKadhai = [
+  { id: "TasxuNZ78-Q", title: "ADMK Issue: EPS, OPS, Sasikala, TTV Dhinakaran", image: "/kpk-1.jpg" },
+  { id: "XAlgLUN1-BU", title: "TVK Velmurugan History", image: "/kpk-2.jpg" },
+  { id: "F-YrLzncX9Q", title: "History of PMK: Anbumani, Ramadoss", image: "/kpk-3.jpg" },
+  { id: "AZYmIYRj7cQ", title: "Hindi Agitation Protest in Tamil Nadu", image: "/kpk-4.jpg" },
+  { id: "DuB2nrUAmVg", title: "India-Pakistan Ceasefire: Mumbai Attack, Lashkar-e-Taiba", image: "/kpk-5.jpg" },
+  { id: "HjA-Vvx5GmY", title: "MK Stalin's Early Life and Career", image: "/kpk-6.jpg" },
+  { id: "00z5WUgRuQA", title: "Encounters Under Stalin's Rule", image: "/kpk-7.jpg" },
+  { id: "01hUk3sYfzE", title: "Kamal Haasan's Political History", image: "/kpk-8.jpg" },
+  { id: "n_SQVZMRf98", title: "ADMK-BJP Alliance History", image: "/kpk-9.jpg" },
+  { id: "7VmCL1j0IAE", title: "History of International Women's Day", image: "/kpk-10.jpg" },
+  { id: "whqNaEpHxQc", title: "History of Caste Census: BJP, Congress, DMK, PMK", image: "/kpk-11.jpg" },
+  { id: "br3p3hzZK3o", title: "Who Will Be the Next Pope: Papal Conclave 2025", image: "/kpk-12.jpg" },
+  { id: "AiHKwxKVARY", title: "The Evolution of Entrance Exams in Tamil Nadu", image: "/kpk-13.jpg" },
 ];
 
 export const writingThemes = [
