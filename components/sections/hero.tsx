@@ -39,15 +39,12 @@ export function Hero() {
           />
         </div>
 
-        {/* Photo centered dead-center of this whole block, both axes.
-            Sized with clamp() (not stepped breakpoints) so it bleeds into
-            the surrounding text rows by the same proportion on every
-            device instead of jumping between disconnected fixed sizes. */}
+        {/* Photo centered dead-center of this whole block, both axes */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-0 z-10 m-auto h-[clamp(320px,55vh,600px)] w-[clamp(220px,38vw,420px)]"
+          className="absolute inset-0 z-10 m-auto w-[260px] h-[360px] sm:w-[300px] sm:h-[400px] lg:w-[500px] lg:h-[600px]"
         >
           <Image
             src="/aj.png"
