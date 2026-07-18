@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { ChevronRight, Play, Volume2, VolumeX, X } from "lucide-react";
+import { ChevronRight, ExternalLink, Play, Volume2, VolumeX, X } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -66,14 +66,12 @@ export function VideoCarousel({
                 </div>
               </div>
             </div>
-            <h3 className="mt-3 font-serif text-base leading-tight text-paper sm:text-lg">
+            <h3 className="mt-3 line-clamp-2 min-h-[2.5em] font-serif text-base leading-tight text-paper sm:text-lg">
               {item.title}
             </h3>
-            {item.role && (
-              <p className="mt-1 font-sans text-[10px] font-bold uppercase tracking-widest text-paper/70">
-                {item.role}
-              </p>
-            )}
+            <p className="mt-1 font-sans text-[10px] font-bold uppercase tracking-widest text-paper/70">
+              {item.role ?? " "}
+            </p>
           </button>
         ))}
       </div>
@@ -113,6 +111,16 @@ export function VideoCarousel({
             <div className="flex items-center justify-between gap-4 p-3 sm:p-4">
               <p className="truncate font-serif text-sm text-paper">{openItem.title}</p>
               <div className="flex shrink-0 items-center gap-2">
+                <a
+                  href={`https://www.youtube.com/watch?v=${openItem.id}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Watch on YouTube"
+                  title="Watch on YouTube"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-paper text-paper transition-colors hover:bg-paper hover:text-ink"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </a>
                 <button
                   type="button"
                   onClick={() => setMuted((m) => !m)}
