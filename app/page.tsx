@@ -1,6 +1,5 @@
 import { Nav } from "@/components/nav";
-import { Hero } from "@/components/sections/hero";
-import { About } from "@/components/sections/about";
+import { HeroAbout } from "@/components/sections/hero-about";
 import { Instagram } from "@/components/sections/instagram";
 import { Video } from "@/components/sections/video";
 import { NarrativReels } from "@/components/sections/narrativ-reels";
@@ -15,8 +14,7 @@ export default function Home() {
   return (
     <main className="relative">
       <Nav />
-      <Hero />
-      <About />
+      <HeroAbout />
       <Instagram />
       <Video />
       <NarrativReels />
