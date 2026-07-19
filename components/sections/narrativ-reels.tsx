@@ -36,9 +36,6 @@ export function NarrativReels() {
                   fill
                   className="object-cover"
                 />
-                <span className="absolute left-3 top-3 rounded-full border-2 border-ink bg-beam px-2.5 py-1 font-sans text-xs font-bold text-ink">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
                 <div className="absolute inset-0 flex items-center justify-center bg-ink/10 transition-colors group-hover:bg-ink/30">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-paper bg-ink/60">
                     <Play className="h-6 w-6 fill-paper text-paper" />

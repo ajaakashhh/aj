@@ -23,7 +23,7 @@ export function Producer() {
     setOpenItem(item);
   };
 
-  const renderCard = (item: VideoItem, i: number, isActive: boolean, activate: () => void) =>
+  const renderCard = (item: VideoItem, _i: number, isActive: boolean, activate: () => void) =>
     isActive ? (
       <button
         type="button"
@@ -57,7 +57,29 @@ export function Producer() {
       </div>
 
       <Reveal delay={0.1}>
-        <FannedCarousel items={producerWork} aspect="aspect-[4/3]" cardWidth={190} renderItem={renderCard} />
+        <div className="container flex justify-center gap-4">
+          {producerWork.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() => openVideo(item)}
+              aria-label={`Play ${item.title}`}
+              className="group relative aspect-[4/3] w-40 shrink-0 overflow-hidden rounded-xl border-2 border-ink shadow-[6px_6px_0_0_hsl(var(--ink))] sm:w-56"
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-ink/10 transition-colors group-hover:bg-ink/30">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-paper bg-ink/60">
+                  <Play className="h-4 w-4 fill-paper text-paper" />
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
       </Reveal>
 
       <Reveal delay={0.16}>
