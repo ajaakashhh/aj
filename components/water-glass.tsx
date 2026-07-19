@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 
-const GLASS_PATH = "M16 10 L64 10 L56 100 L24 100 Z";
+const GLASS_PATH = "M18 10 L62 10 L62 100 L18 100 Z";
+const GLASS_X = 18;
+const GLASS_WIDTH = 44;
 const FILL_SURFACE_Y = 15;
 
 export function WaterGlass({ className = "" }: { className?: string }) {
@@ -23,29 +25,22 @@ export function WaterGlass({ className = "" }: { className?: string }) {
         }}
       />
 
-      <defs>
-        <clipPath id="glassClip">
-          <path d={GLASS_PATH} />
-        </clipPath>
-      </defs>
-
       <motion.rect
-        x="20"
-        width="40"
+        x={GLASS_X + 2}
+        width={GLASS_WIDTH - 4}
         fill="hsl(199 89% 60%)"
-        clipPath="url(#glassClip)"
-        initial={{ y: 100, height: 0 }}
-        whileInView={{ y: FILL_SURFACE_Y, height: 100 - FILL_SURFACE_Y }}
+        initial={{ y: 98, height: 0 }}
+        whileInView={{ y: FILL_SURFACE_Y, height: 98 - FILL_SURFACE_Y }}
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 1, delay: 0.35, ease: [0.34, 1.2, 0.4, 1] }}
       />
 
       <motion.ellipse
         cx="40"
-        rx="16"
+        rx="14"
         ry="2"
         fill="hsl(199 89% 78%)"
-        initial={{ cy: 100, opacity: 0, scaleX: 0.6 }}
+        initial={{ cy: 98, opacity: 0, scaleX: 0.6 }}
         whileInView={{ cy: FILL_SURFACE_Y, opacity: 0.8, scaleX: [0.6, 1.15, 1] }}
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 1, delay: 0.35, ease: [0.34, 1.2, 0.4, 1] }}
