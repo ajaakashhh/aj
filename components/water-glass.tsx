@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const GLASS_PATH = "M16 10 L64 10 L56 100 L24 100 Z";
-const FILL_SURFACE_Y = 32;
+const FILL_SURFACE_Y = 15;
 
 export function WaterGlass({ className = "" }: { className?: string }) {
   return (
