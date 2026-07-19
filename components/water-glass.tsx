@@ -27,23 +27,19 @@ export function WaterGlass({ className = "" }: { className?: string }) {
   };
 
   return (
+    <button
+      type="button"
+      onClick={handleDrink}
+      aria-label={filled ? "Drink the water" : "Refill the glass"}
+      className={`inline-block appearance-none border-none bg-transparent p-0 outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-signal ${className}`}
+    >
     <motion.svg
       viewBox="0 0 80 116"
       fill="none"
-      className={`cursor-pointer ${className}`}
+      className="h-full w-full"
       xmlns="http://www.w3.org/2000/svg"
-      role="button"
-      tabIndex={0}
-      aria-label={filled ? "Drink the water" : "Refill the glass"}
       onViewportEnter={() => setFilled(true)}
       viewport={{ once: true, amount: 0.6 }}
-      onClick={handleDrink}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          handleDrink();
-        }
-      }}
       animate={controls}
       whileTap={{ scale: 0.95 }}
     >
@@ -100,5 +96,6 @@ export function WaterGlass({ className = "" }: { className?: string }) {
         fill="none"
       />
     </motion.svg>
+    </button>
   );
 }
