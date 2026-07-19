@@ -1,16 +1,52 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const BODY_PATH = "M16 10 L20 90 Q20 100 30 100 L50 100 Q60 100 60 90 L64 10";
 const RIM_CY = 10;
 const RIM_RX = 24;
 const RIM_RY = 4;
-const FILL_SURFACE_Y = 16;
+const EMPTY_Y = 98;
+const FILL_SURFACE_Y = 28; // ~80% full
 
 export function WaterGlass({ className = "" }: { className?: string }) {
+  const [filled, setFilled] = useState(false);
+  const controls = useAnimation();
+
+  const waterY = filled ? FILL_SURFACE_Y : EMPTY_Y;
+  const waterHeight = filled ? EMPTY_Y - FILL_SURFACE_Y : 0;
+
+  const handleDrink = () => {
+    setFilled((f) => !f);
+    controls.start({
+      y: [0, -10, 0],
+      scale: [1, 1.1, 1],
+      transition: { duration: 0.5, ease: "easeOut" },
+    });
+  };
+
   return (
-    <svg viewBox="0 0 80 116" fill="none" className={className} xmlns="http://www.w3.org/2000/svg">
+    <motion.svg
+      viewBox="0 0 80 116"
+      fill="none"
+      className={`cursor-pointer ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+      role="button"
+      tabIndex={0}
+      aria-label={filled ? "Drink the water" : "Refill the glass"}
+      onViewportEnter={() => setFilled(true)}
+      viewport={{ once: true, amount: 0.6 }}
+      onClick={handleDrink}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleDrink();
+        }
+      }}
+      animate={controls}
+      whileTap={{ scale: 0.95 }}
+    >
       <motion.rect
         x="38.5"
         y="-14"
@@ -18,7 +54,7 @@ export function WaterGlass({ className = "" }: { className?: string }) {
         rx="1.5"
         fill="hsl(199 89% 55%)"
         initial={{ height: 0, opacity: 1 }}
-        whileInView={{ height: 24, opacity: [1, 1, 0] }}
+        whileInView={{ height: 21, opacity: [1, 1, 0] }}
         viewport={{ once: true, amount: 0.6 }}
         transition={{
           height: { duration: 0.9, delay: 0.2, ease: "easeOut" },
@@ -31,10 +67,9 @@ export function WaterGlass({ className = "" }: { className?: string }) {
         width="38"
         rx="10"
         fill="hsl(199 89% 60%)"
-        initial={{ y: 98, height: 0 }}
-        whileInView={{ y: FILL_SURFACE_Y, height: 98 - FILL_SURFACE_Y }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 1, delay: 0.35, ease: [0.34, 1.2, 0.4, 1] }}
+        initial={{ y: EMPTY_Y, height: 0 }}
+        animate={{ y: waterY, height: waterHeight }}
+        transition={{ duration: 0.8, ease: [0.34, 1.2, 0.4, 1] }}
       />
 
       <motion.ellipse
@@ -42,10 +77,9 @@ export function WaterGlass({ className = "" }: { className?: string }) {
         rx="16"
         ry="3"
         fill="hsl(199 89% 80%)"
-        initial={{ cy: 98, opacity: 0, scaleX: 0.6 }}
-        whileInView={{ cy: FILL_SURFACE_Y, opacity: 0.9, scaleX: [0.6, 1.15, 1] }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 1, delay: 0.35, ease: [0.34, 1.2, 0.4, 1] }}
+        initial={{ cy: EMPTY_Y, opacity: 0, scaleX: 0.6 }}
+        animate={{ cy: waterY, opacity: filled ? 0.9 : 0, scaleX: filled ? 1 : 0.6 }}
+        transition={{ duration: 0.8, ease: [0.34, 1.2, 0.4, 1] }}
       />
 
       <path
@@ -65,6 +99,6 @@ export function WaterGlass({ className = "" }: { className?: string }) {
         strokeLinecap="round"
         fill="none"
       />
-    </svg>
+    </motion.svg>
   );
 }
