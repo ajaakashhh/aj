@@ -8,7 +8,6 @@ const links = [
   { href: "#instagram", label: "Instagram" },
   { href: "#producer", label: "Producer" },
   { href: "#creative", label: "Creative" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export function Nav() {
