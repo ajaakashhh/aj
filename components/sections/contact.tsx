@@ -1,6 +1,7 @@
 "use client";
 import { profile } from "@/lib/data";
 import { Reveal } from "@/components/reveal";
+import { WaterGlass } from "@/components/water-glass";
 import { ArrowUpRight, Instagram, Linkedin, Mail } from "lucide-react";
 
 export function Contact() {
@@ -55,6 +56,17 @@ export function Contact() {
             </a>
           </Reveal>
         </div>
+
+        <Reveal delay={0.24}>
+          <div className="mt-8 flex items-center gap-4">
+            <WaterGlass className="h-14 w-auto sm:h-16" />
+            <p className="font-serif text-sm italic leading-snug sm:text-base">
+              You&apos;ve scrolled a long way.
+              <br />
+              Here, have some water.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
