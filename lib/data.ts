@@ -5,7 +5,7 @@ export const profile = {
   oneLine:
     "Writer, Journalist, Media Producer, and Filmmaker.",
   aboutLead:
-    "I'm a writer and journalist based in Chennai, working at the intersection of politics and media.",
+    "I'm a 23-year-old writer and journalist based in Chennai, working at the intersection of politics and media.",
   aboutBody: [
     "At Narrativ, I produce reel and long-form content across politics, tech, policy communications, and a range of other industries.",
     "My independent work is driven by journalistic instinct, reels made to inform people on political and historical topics, grounded in fact.",
