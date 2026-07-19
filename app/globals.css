@@ -80,4 +80,15 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  .water-glass-btn,
+  .water-glass-btn:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  .water-glass-btn:focus-visible {
+    outline: 2px solid hsl(var(--signal));
+    outline-offset: 4px;
+  }
 }
