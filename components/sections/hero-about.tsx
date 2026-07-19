@@ -28,10 +28,10 @@ export function HeroAbout() {
   const heroFilter = useTransform(heroBlur, (v) => `blur(${v}px)`);
   const heroPointerEvents = useTransform(scrollYProgress, (v) => (v < 0.2 ? "auto" : "none"));
 
-  const aboutOpacity = useTransform(scrollYProgress, [0.35, 0.62], [0, 1]);
-  const aboutScale = useTransform(scrollYProgress, [0.35, 0.62], [0.96, 1]);
-  const aboutBodyOpacity = useTransform(scrollYProgress, [0.55, 0.85], [0, 1]);
-  const aboutBodyY = useTransform(scrollYProgress, [0.55, 0.85], [16, 0]);
+  const aboutOpacity = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]);
+  const aboutScale = useTransform(scrollYProgress, [0.35, 0.5], [0.96, 1]);
+  const aboutBodyOpacity = useTransform(scrollYProgress, [0.4, 0.55], [0, 1]);
+  const aboutBodyY = useTransform(scrollYProgress, [0.4, 0.55], [16, 0]);
   const aboutPointerEvents = useTransform(scrollYProgress, (v) => (v > 0.5 ? "auto" : "none"));
 
   return (
@@ -91,7 +91,7 @@ export function HeroAbout() {
                 {profile.aboutBody.map((para, i) => (
                   <p
                     key={i}
-                    className="font-serif text-lg leading-relaxed text-muted-foreground sm:text-2xl"
+                    className="font-serif text-lg leading-relaxed text-ink/80 sm:text-2xl"
                   >
                     {para}
                   </p>
