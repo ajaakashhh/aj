@@ -55,7 +55,7 @@ export const work = [
     title: "Writer-Coordinator",
     period: "Sep 2025 to present",
     current: true,
-    body: "Reel production and government communications across policy and political client work.",
+    body: "Reel production and government communications across a range of clients.",
     tags: ["Government comms", "Reel production", "Content writing", "Policy campaigns"],
   },
   {
