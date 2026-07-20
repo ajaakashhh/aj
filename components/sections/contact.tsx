@@ -6,7 +6,7 @@ import { ArrowUpRight, Instagram, Linkedin, Mail } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="flex h-screen flex-col justify-center overflow-hidden bg-signal text-paper">
+    <section id="contact" className="flex h-[100svh] flex-col justify-center overflow-hidden bg-signal text-paper">
       <div className="container flex h-full flex-col py-8 sm:py-10">
         <div>
           <Reveal>

@@ -8,7 +8,7 @@ const rotation = ["-rotate-2", "rotate-2"];
 
 export function Creative() {
   return (
-    <section id="creative" className="flex h-screen flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
+    <section id="creative" className="flex h-[100svh] flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
       <div className="container">
         <SectionLabel index="07" title="Creative Work" theme="light" />
 

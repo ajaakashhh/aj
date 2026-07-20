@@ -9,7 +9,7 @@ export function Instagram() {
   return (
     <section
       id="instagram"
-      className="flex h-screen flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal text-paper"
+      className="flex h-[100svh] flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal text-paper"
     >
       <div className="hatch pointer-events-none absolute inset-0 opacity-10" aria-hidden />
 
