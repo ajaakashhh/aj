@@ -16,7 +16,7 @@ export function Essays() {
   };
 
   return (
-    <section id="essays" className="flex h-[100svh] flex-col justify-center overflow-hidden bg-beam py-10 scroll-mt-20 sm:py-14">
+    <section id="essays" className="flex min-h-[100svh] flex-col justify-center overflow-hidden bg-beam py-10 scroll-mt-20 sm:py-14">
       <div className="container relative">
         <Sparkle className="absolute right-6 top-0 hidden h-6 w-6 fill-current text-ink sm:block" />
         <SectionLabel index="06" title="Essays" theme="light" />

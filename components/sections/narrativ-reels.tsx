@@ -19,7 +19,7 @@ export function NarrativReels() {
   return (
     <section
       id="narrativ-reels"
-      className="flex h-[100svh] flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal scroll-mt-20"
+      className="flex min-h-[100svh] flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal scroll-mt-20"
     >
       <div className="container relative">
         <Sparkle className="absolute right-6 top-0 hidden h-6 w-6 fill-current text-beam sm:block" />

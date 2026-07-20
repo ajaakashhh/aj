@@ -9,7 +9,7 @@ export function Video() {
   const rest = reels.filter((r) => !r.featured);
 
   return (
-    <section id="video" className="flex h-[100svh] flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
+    <section id="video" className="flex min-h-[100svh] flex-col justify-center overflow-hidden bg-paper py-8 scroll-mt-20 sm:py-10">
       <div className="container">
         <SectionLabel index="03" title="Star Performers" theme="light" />
 
