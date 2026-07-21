@@ -11,8 +11,6 @@ export function Instagram() {
       id="instagram"
       className="flex min-h-[100svh] flex-col justify-center overflow-hidden border-y-2 border-ink bg-signal text-paper"
     >
-      <div className="hatch pointer-events-none absolute inset-0 opacity-10" aria-hidden />
-
       <div className="container relative py-6 sm:py-8">
         <div className="mb-4 flex items-baseline gap-4 border-b-2 border-paper pb-3">
           <span className="font-display text-lg text-beam">02</span>
