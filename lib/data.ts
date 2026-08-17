@@ -129,7 +129,7 @@ export const narrativReels = [
   { url: "https://www.instagram.com/onealphaventures/reel/DanDk-gNPWB/", image: "/narrativ-reel-4.jpg" },
   { url: "https://www.instagram.com/sancraft_industries/reel/DaxUFE3pdRy/", image: "/narrativ-reel-5.jpg" },
   { url: "https://www.instagram.com/sancraft_industries/reel/DanBGt3pcZX/", image: "/narrativ-reel-7.jpg" },
-  { url: "https://www.instagram.com/reel/Dam9t8-om4K/", image: "/narrativ-reel-8.jpg" },
+  { url: "https://www.instagram.com/lifeatraptee/reel/Db8NRomgkJt/", image: "/narrativ-reel-8.jpg" },
 ];
 
 export const producerWork = [

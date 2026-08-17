@@ -4,16 +4,17 @@ import { narrativReels } from "@/lib/data";
 import { SectionLabel } from "@/components/section-label";
 import { Reveal } from "@/components/reveal";
 import { InstagramReelTrigger } from "@/components/instagram-reel-trigger";
-import { ChevronRight, Play, Sparkle } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Sparkle } from "lucide-react";
 import Image from "next/image";
 
 export function NarrativReels() {
   const rowRef = useRef<HTMLDivElement | null>(null);
 
-  const scroll = () => {
+  const scroll = (direction: "left" | "right") => {
     const row = rowRef.current;
     if (!row) return;
-    row.scrollBy({ left: row.clientWidth * 0.8, behavior: "smooth" });
+    const delta = row.clientWidth * 0.8;
+    row.scrollBy({ left: direction === "left" ? -delta : delta, behavior: "smooth" });
   };
 
   return (
@@ -61,7 +62,15 @@ export function NarrativReels() {
 
           <button
             type="button"
-            onClick={scroll}
+            onClick={() => scroll("left")}
+            aria-label="Scroll left"
+            className="absolute left-2 top-[42%] flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border-2 border-ink bg-beam text-ink shadow-[3px_3px_0_0_hsl(var(--ink))] transition-transform hover:-translate-x-[1px] hover:translate-y-[calc(-50%+1px)]"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scroll("right")}
             aria-label="Scroll right"
             className="absolute right-2 top-[42%] flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border-2 border-ink bg-beam text-ink shadow-[3px_3px_0_0_hsl(var(--ink))] transition-transform hover:translate-x-[1px] hover:translate-y-[calc(-50%+1px)]"
           >
